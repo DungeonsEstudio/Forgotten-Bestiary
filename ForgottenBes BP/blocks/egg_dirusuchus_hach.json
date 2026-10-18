@@ -1,0 +1,26 @@
+{
+  "format_version": "1.20.80",
+  "minecraft:block": {
+    "description": {
+      "identifier": "si:egg_dirusuchus_hach"
+    },
+    "components": {
+      "minecraft:loot": "loot_tables/empty.json",
+      "minecraft:geometry": "geometry.dirusuchus_egg",
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "si_dirusuchus_egg_block_hach",
+          "render_method": "alpha_test"
+        }
+      },
+      "minecraft:selection_box": {
+        "origin": [ -2.25, 0, -2.25 ],
+        "size": [ 4.5, 7.0, 4.5 ]
+      },
+      "minecraft:collision_box": {
+        "origin": [ -2.25, 0, -2.25 ],
+        "size": [ 4.5, 7.0, 4.5 ]
+      }
+    }
+  }
+}

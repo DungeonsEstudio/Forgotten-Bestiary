@@ -1,0 +1,28 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "si:decoration_diru"
+    },
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "H",
+      "W"
+    ],
+    "key": {
+      "H": {
+        "item": "si:head_diru"
+      },
+      "W": {
+        "item": "minecraft:oak_planks"
+      }
+    },
+    "result": {
+      "item": "si:decoration_diru",
+      "count": 1
+    },
+    "unlock": {
+      "context": "AlwaysUnlocked"
+    }
+  }
+}

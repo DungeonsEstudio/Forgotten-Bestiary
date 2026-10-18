@@ -1,0 +1,25 @@
+{
+	"format_version": [
+		1,
+		1,
+		0
+	],
+	"si:bloodfish_egg": {
+		"sound": "frog_spawn"
+	},
+	"si:egg_venatosaurus_impavidus": {
+		"sound": "coral"
+	},
+	"si:bearcroo_egg": {
+		"sound": "coral"
+	},
+	"si:egg_dragonskin": {
+		"sound": "coral"
+	},
+	"si:spinaculex_egg": {
+		"sound": "frog_spawn"
+	},
+	"si:sepulcro_egg": {
+		"sound": "frog_spawn"
+	}
+}

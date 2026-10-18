@@ -1,0 +1,52 @@
+{
+	"format_version": 2,
+	"metadata": {
+		"authors": [
+			"Dungueo Studios"
+		],
+		"generated_with": {
+			"bridge": [
+				"2.7.54"
+			],
+			"dash": [
+				"0.11.7"
+			]
+		}
+	},
+	"header": {
+		"name": "pack.name",
+		"description": "pack.description",
+		"min_engine_version": [
+			1,
+			20,
+			80
+		],
+		"uuid": "8b39c99b-21f2-413a-8a00-906c98ac6422",
+		"version": [
+			1,
+			0,
+			1
+		]
+	},
+	"modules": [
+		{
+			"type": "resources",
+			"uuid": "b4f61967-7a9f-4dce-8c3d-9a4291df4e45",
+			"version": [
+				1,
+				0,
+				1
+			]
+		}
+	],
+	"dependencies": [
+		{
+			"uuid": "a2b8af84-5f46-4349-a77b-5c493facb41c",
+			"version": [
+				1,
+				0,
+				1
+			]
+		}
+	]
+}

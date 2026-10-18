@@ -1,0 +1,42 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "si:bloodfish",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"varian1": "textures/entity/bloodfish/Bloodfish",
+				"varian2": "textures/entity/bloodfish/Bloodfish_2",
+				"varian3": "textures/entity/bloodfish/Bloodfish_3"
+			},
+			"geometry": {
+				"default": "geometry.bloodfish"
+			},
+			"animations": {
+				"body_system_paleo": "animation.body_system_paleo_bloodfish.setup",
+				"land": "animation.bloodfish.land",
+				"swim": "animation.bloodfish.swim",
+				"controller_swim": "controller.animation.bloodfish.main"
+			},
+			"scripts": {
+				"initialize": [
+					"variable.rot_v = 0;"
+				],
+				"animate": [
+					{
+						"body_system_paleo": "query.is_in_water"
+					},
+					"controller_swim"
+				]
+			},
+			"render_controllers": [
+				"controller.render.bloodfish"
+			],
+			"spawn_egg": {
+				"texture": "si_bloodfish_spaw"
+			}
+		}
+	}
+}

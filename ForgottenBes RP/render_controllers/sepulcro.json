@@ -1,0 +1,16 @@
+{
+	"format_version": "1.20.80",
+	"render_controllers": {
+		"controller.render.sepulcro": {
+			"geometry": "geometry.default",
+			"materials": [
+				{
+					"*": "material.default"
+				}
+			],
+			"textures": [
+				"query.variant==1?texture.varian2:(query.variant==2?texture.varian3:texture.varian1)"
+			]
+		}
+	}
+}

@@ -1,0 +1,18 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "si:bio_chestplate_craft"
+    },
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "X X",
+      "XXX",
+      "XXX"
+    ],
+    "key": {
+      "X": { "item": "si:bio_plates" }
+    },
+    "result": { "item": "si:bio_chestplate", "count": 1 }
+  }
+}

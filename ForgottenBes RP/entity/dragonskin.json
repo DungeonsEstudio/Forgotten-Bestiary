@@ -1,0 +1,47 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "si:dragonskin",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"variant_0": "textures/entity/dragonskin/dragonskin_0",
+				"variant_1": "textures/entity/dragonskin/dragonskin_1",
+				"aure": "textures/entity/dragonskin/aure"
+			},
+			"geometry": {
+				"default": "geometry.dragonskin"
+			},
+			"animations": {
+				"idle": "animation.Dragonskin.idle",
+				"walk": "animation.Dragonskin.walk",
+				"eat": "animation.Dragonskin.eat",
+				"attack": "animation.Dragonskin.attack",
+				"look_at_target": "animation.Dragonskin.look_at_target",
+				"Climb": "animation.Dragonskin.Climb",
+				"swim": "animation.Dragonskin.swim",
+				"ctrl_walk": "controller.animation.psilopterus.move",
+				"ctrl_eat": "controller.animation.psilopterus.eat",
+				"ctrl_attack": "controller.animation.psilopterus.attack",
+				"ctrl_look": "animation.Dragonskin.look_at_target"
+			},
+			"scripts": {
+				"animate": [
+					"ctrl_walk",
+					"ctrl_eat",
+					"ctrl_attack",
+					"ctrl_look"
+				]
+			},
+			"render_controllers": [
+				"controller.render.dragonskin"
+			],
+			"spawn_egg": {
+				"texture": "si_dragonskin_egg",
+				"texture_index": 0
+			}
+		}
+	}
+}

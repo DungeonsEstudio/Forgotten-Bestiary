@@ -1,0 +1,15 @@
+import "./welcome.js";
+import "./thrown_bile.js";
+import "./bloodfish_buket.js";
+import "./sepulcro.js"
+import "./pocion_spinaculex.js"
+import "./antidote.js"
+import "./badomen.js"
+import "./desmontar.js";
+import "./reproduccion.js";
+import "./huevos.js";
+import "./particula.js"
+import "./larba_spinaculex.js";
+import "./bio_armor.js";
+import "./diru_boots.js";
+import "./item_egg.js";

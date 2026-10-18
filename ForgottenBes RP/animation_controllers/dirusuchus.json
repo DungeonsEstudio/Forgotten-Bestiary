@@ -1,0 +1,128 @@
+{
+    "format_version": "1.19.0",
+    "animation_controllers": {
+        "controller.animation.dirusuchus.move": {
+            "states": {
+                "default": {
+                    "animations": ["walk"],
+                    "transitions": [
+                        { "swimming": "query.is_stackable && query.modified_move_speed > 0.1" },
+                        { "idle_swim": "query.is_stackable && query.modified_move_speed <= 0.1" },
+                        { "Idle": "!query.is_stackable && query.ground_speed < 0.1" },
+                        { "run": "query.has_target" }
+                    ],
+                    "blend_transition": 0.5
+                },
+                "Idle": {
+                    "animations": ["idle"],
+                    "transitions": [
+                        { "swimming": "query.is_stackable && query.modified_move_speed > 0.1" },
+                        { "idle_swim": "query.is_stackable && query.modified_move_speed <= 0.1" },
+                        { "default": "!query.is_stackable && query.ground_speed > 0.1" },
+                        { "sit": "query.is_sitting" }
+                    ],
+                    "blend_transition": 0.5
+                },
+                "run": {
+                    "animations": ["run"],
+                    "transitions": [
+                        { "swimming": "query.is_stackable" },
+                        { "Idle": "!query.is_stackable && query.ground_speed < 0.1" },
+                        { "default": "!query.has_target" }
+                    ],
+                    "blend_transition": 0.5
+                },
+                "swimming": {
+                    "animations": ["swim"],
+                    "transitions": [
+                        { "idle_swim": "query.modified_move_speed < 0.1" },
+                        { "Idle": "!query.is_stackable" }
+                    ],
+                    "blend_transition": 0.5
+                },
+                "idle_swim": {
+                    "animations": ["idle_swim"],
+                    "transitions": [
+                        { "swimming": "query.modified_move_speed > 0.1" },
+                        { "Idle": "!query.is_stackable" }
+                    ],
+                    "blend_transition": 0.5
+                },
+                "sit": {
+                    "animations": ["sit"],
+                    "transitions": [
+                        { "Idle": "!query.is_sitting" }
+                    ],
+                    "blend_transition": 0.5
+                }
+            }
+        },
+        "controller.animation.dirusuchus.attack": {
+            "states": {
+                "attack": {
+                    "animations": ["attack"],
+                    "transitions": [
+                        { "default": "query.all_animations_finished" }
+                    ]
+                },
+                "default": {
+                    "transitions": [
+                        { "attack": "variable.attack_time > 0" }
+                    ]
+                }
+            }
+        },
+        "controller.animation.dirusuchus.eat": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        { "eat": "query.is_eating" }
+                    ],
+                    "blend_transition": 0.2
+                },
+                "eat": {
+                    "animations": ["eat"],
+                    "transitions": [
+                        { "default": "!query.is_eating" }
+                    ],
+                    "blend_transition": 0.2
+                }
+            }
+        },
+        "controller.animation.dirusuchus.look": {
+            "states": {
+                "default": {
+                    "animations": [
+                        { "look_at_target": 1 }
+                    ]
+                }
+            }
+        },
+        "controller.animation.dirusuchus.grab_actions": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        { "water_roll": "query.is_in_water && (query.has_rider || query.is_saddled)" },
+                        { "land_shake": "!query.is_in_water && (query.has_rider || query.is_saddled)" }
+                    ]
+                },
+                "land_shake": {
+                    "blend_transition": 0.3,
+                    "animations": ["cut_eart"],
+                    "transitions": [
+                        { "water_roll": "query.is_in_water && (query.has_rider || query.is_saddled)" },
+                        { "default": "!query.has_rider && !query.is_saddled" }
+                    ]
+                },
+                "water_roll": {
+                    "blend_transition": 0.4,
+                    "animations": ["special_attack"],
+                    "transitions": [
+                        { "land_shake": "!query.is_in_water && (query.has_rider || query.is_saddled)" },
+                        { "default": "!query.has_rider && !query.is_saddled" }
+                    ]
+                }
+            }
+        }
+    }
+}

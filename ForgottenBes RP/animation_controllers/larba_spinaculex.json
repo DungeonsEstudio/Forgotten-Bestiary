@@ -1,0 +1,52 @@
+{
+	"format_version": "1.19.0",
+	"animation_controllers": {
+		"controller.animation.larba_spinaculex.move": {
+			"states": {
+				"default": {
+					"animations": [
+						{
+							"walk": "!query.is_in_water"
+						},
+						{
+							"walk": "query.is_in_water"
+						}
+					],
+					"transitions": [
+						{
+							"Idle": "query.ground_speed<=0.05"
+						}
+					],
+					"blend_transition": 0.5
+				},
+				"Idle": {
+					"animations": [
+						{
+							"idle": "!query.is_in_water"
+						},
+						{
+							"walk": "query.is_in_water"
+						}
+					],
+					"transitions": [
+						{
+							"default": "query.ground_speed>0.05&&query.ground_speed<=3"
+						}
+					],
+					"blend_transition": 0.5
+				}
+			}
+		},
+		"controller.animation.baby_venatosaurus_impavidus.look": {
+			"states": {
+				"default": {
+					"animations": [
+						{
+							"look_at_target": 1
+						}
+					]
+				}
+			}
+		}
+	}
+}

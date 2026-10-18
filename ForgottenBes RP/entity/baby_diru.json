@@ -1,0 +1,40 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "si:baby_diru",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/dirusuchus/baby_diru",
+				"alternativa": "textures/entity/dirusuchus/baby_diru_1"
+			},
+			"geometry": {
+				"default": "geometry.baby_diru"
+			},
+			"animations": {
+				"idle": "animation.baby_diru.idle",
+				"walk": "animation.baby_diru.walk",
+				"run": "animation.baby_diru.run",
+				"swwim":"animation.baby_diru.swim",
+				"look_at_target": "animation.baby_diru.look_at_target"
+			},
+			"animation_controllers": [
+				{
+					"move": "controller.animation.baby_diru.move"
+				},
+				{
+					"look": "controller.animation.baby_diru.look"
+				}
+			],
+			"render_controllers": [
+				"controller.render.baby_diru"
+			],
+			"spawn_egg": {
+				"base_color": "#000000",
+				"overlay_color": "#FFFFFF"
+			}
+		}
+	}
+}

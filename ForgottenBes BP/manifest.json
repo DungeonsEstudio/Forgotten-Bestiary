@@ -1,0 +1,67 @@
+{
+	"format_version": 2,
+	"metadata": {
+		"authors": [
+			"Dungueo Studios"
+		],
+		"generated_with": {
+			"bridge": [
+				"2.7.54"
+			],
+			"dash": [
+				"0.11.7"
+			]
+		}
+	},
+	"header": {
+		"name": "pack.name",
+		"description": "pack.description",
+		"min_engine_version": [
+			1,
+			20,
+			80
+		],
+		"uuid": "a2b8af84-5f46-4349-a77b-5c493facb41c",
+		"version": [
+			1,
+			0,
+			1
+		]
+	},
+	"modules": [
+		{
+			"type": "data",
+			"uuid": "afe93fee-34c4-4577-b77c-c46029896b5a",
+			"version": [
+				1,
+				0,
+				1
+			]
+		},
+		{
+			"type": "script",
+			"language": "javascript",
+			"uuid": "58f06c0e-13c2-4e86-bece-366250529e70",
+			"entry": "scripts/main.js",
+			"version": [
+				1,
+				0,
+				1
+			]
+		}
+	],
+	"dependencies": [
+		{
+			"uuid": "8b39c99b-21f2-413a-8a00-906c98ac6422",
+			"version": [
+				1,
+				0,
+				1
+			]
+		},
+		{
+			"module_name": "@minecraft/server",
+			"version": "2.7.0"
+		}
+	]
+}

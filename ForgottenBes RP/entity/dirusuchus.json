@@ -1,0 +1,44 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "si:dirusuchus",
+            "materials": {
+                "default": "entity_alphatest"
+            },
+            "textures": {
+                "diru_default": "textures/entity/dirusuchus/dirusuchus",
+                "diru_muted": "textures/entity/dirusuchus/dirusuchus_mutado"
+            },
+            "geometry": {
+                "default": "geometry.dirusuchus"
+            },
+            "animations": {
+                "idle": "animation.dirusuchus.idle",
+                "walk": "animation.dirusuchus.walk",
+                "eat": "animation.dirusuchus.eat",
+                "attack": "animation.dirusuchus.attack",
+                "special_attack": "animation.dirusuchus.special_attack",
+                "cut_eart": "animation.dirusuchus.cut_eart",
+                "run": "animation.dirusuchus.run",
+                "sit": "animation.dirusuchus.sleep",
+                "swim": "animation.dirusuchus.swim",
+                "idle_swim": "animation.dirusuchus.idle_swim",
+                "look_at_target": "animation.dirusuchus.look_at_target"
+            },
+            "animation_controllers": [
+                { "move": "controller.animation.dirusuchus.move" },
+                { "attack": "controller.animation.dirusuchus.attack" },
+                { "eat": "controller.animation.dirusuchus.eat" },
+                { "look": "controller.animation.dirusuchus.look" },
+                { "grab_actions": "controller.animation.dirusuchus.grab_actions" }
+            ],
+            "render_controllers": [
+                "controller.render.dirusuchus"
+            ],
+            "spawn_egg": {
+                "texture": "si_spawn_egg_diru"
+            }
+        }
+    }
+}

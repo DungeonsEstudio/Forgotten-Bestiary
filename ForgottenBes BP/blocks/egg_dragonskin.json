@@ -1,0 +1,28 @@
+{
+  "format_version": "1.20.80",
+  "minecraft:block": {
+    "description": {
+      "identifier": "si:egg_dragonskin",
+      "menu_category": {
+        "category": "nature"
+      }
+    },
+    "components": {
+      "minecraft:geometry": "geometry.dragonskin_egg",
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "si_dragonskin_egg_block",
+          "render_method": "alpha_test"
+        }
+      },
+      "minecraft:selection_box": {
+        "origin": [ -2.25, 0, -2.25 ],
+        "size": [ 4.5, 5.0, 4.5 ]
+      },
+      "minecraft:collision_box": {
+        "origin": [ -2.25, 0, -2.25 ],
+        "size": [ 4.5, 5.0, 4.5 ]
+      }
+    }
+  }
+}

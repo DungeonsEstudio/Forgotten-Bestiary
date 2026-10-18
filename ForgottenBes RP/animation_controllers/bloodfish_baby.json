@@ -1,0 +1,45 @@
+{
+	"format_version": "1.19.0",
+	"animation_controllers": {
+		"controller.animation.bloodfish_baby.main": {
+			"states": {
+				"default": {
+					"animations": [
+						{
+							"land": "!query.is_in_water"
+						},
+						{
+							"swim": "query.is_in_water"
+						}
+					],
+					"transitions": [
+						{
+							"Swim": "query.modified_move_speed>0.01&&!query.has_target&&query.is_in_water"
+						}
+					],
+					"blend_transition": 0.5
+				},
+				"Swim": {
+					"animations": [
+						"swim"
+					],
+					"transitions": [
+						{
+							"default": "query.modified_move_speed<=0.01"
+						}
+					],
+					"blend_transition": 0.5
+				}
+			}
+		},
+		"controller.animation.bloodfish_baby.look": {
+			"states": {
+				"default": {
+					"animations": [
+						"look_at_target"
+					]
+				}
+			}
+		}
+	}
+}

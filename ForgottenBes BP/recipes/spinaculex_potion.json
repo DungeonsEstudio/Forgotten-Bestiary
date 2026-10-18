@@ -1,0 +1,14 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_brewing_mix": {
+		"description": {
+			"identifier": "si:spinaculex_potion_recipe"
+		},
+		"tags": [
+			"brewing_stand"
+		],
+		"input": "minecraft:potion",
+		"reagent": "si:spinaculex_blood",
+		"output": "si:posion_spinaculex"
+	}
+}

@@ -1,0 +1,152 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "si:baby_venatosaurus_impavidus",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false
+		},
+		"component_groups": {
+			"si:despawn": {
+				"minecraft:instant_despawn": {}
+			}
+		},
+		"components": {
+			
+			"minecraft:is_baby": {},
+			"minecraft:timer": {
+				"time": 60,
+				"looping": false,
+				"time_down_event": {
+					"event": "si:transform_to_adult"
+				}
+			},
+			"minecraft:type_family": {
+				"family": [
+					"baby_venatosaurus_impavidus",
+					"carnivore"
+				]
+			},
+			"minecraft:navigation.walk": {
+				"can_path_over_water": true,
+				"avoid_damage_blocks": true,
+				"avoid_portals": false,
+				"avoid_sun": false,
+				"avoid_water": true,
+				"can_breach": false,
+				"can_break_doors": false,
+				"can_jump": true,
+				"can_open_doors": false,
+				"can_open_iron_doors": false,
+				"can_pass_doors": true,
+				"can_path_from_air": false,
+				"can_path_over_lava": false,
+				"can_sink": true,
+				"can_swim": false,
+				"can_walk": true,
+				"can_walk_in_lava": false,
+				"is_amphibious": false
+			},
+			"minecraft:movement.basic": {},
+			"minecraft:jump.static": {
+				"jump_power": 0.42
+			},
+			"minecraft:behavior.follow_parent": {
+				"priority": 1,
+				"speed_multiplier": 2
+			},
+			"minecraft:behavior.random_stroll": {
+				"priority": 8,
+				"speed_multiplier": 1.2
+			},
+			"minecraft:damage_sensor": {
+				"triggers": [
+					{
+						"cause": "fall",
+						"deals_damage": "no"
+					}
+				]
+			},
+			"minecraft:can_climb": {},
+			"minecraft:collision_box": {
+				"height": 1,
+				"width": 1
+			},
+			"minecraft:pushable": {
+				"is_pushable": false,
+				"is_pushable_by_piston": true
+			},
+			"minecraft:leashable": {
+				"soft_distance": 4,
+				"hard_distance": 9,
+				"max_distance": 17
+			},
+			"minecraft:nameable": {
+				"alwaysShow": true,
+				"allowNameTagRenaming": true,
+				"allow_name_tag_renaming": true,
+				"always_show": true
+			},
+			"minecraft:health": {
+				"value": 30,
+				"max": 30
+			},
+			"minecraft:despawn": {
+				"despawn_from_distance": {}
+			},
+			"minecraft:behavior.float": {
+				"priority": 0,
+				"sink_with_passengers": false
+			},
+			"minecraft:physics": {
+				"has_collision": true,
+				"has_gravity": true,
+				"push_towards_closest_space": false
+			},
+			"minecraft:movement": {
+				"value": 0.2
+			},
+			"minecraft:scale": {
+				"value": 0.5
+			},
+			"minecraft:behavior.look_at_player": {
+				"priority": 9,
+				"look_distance": 6,
+				"probability": 0.02
+			},
+			"minecraft:behavior.random_look_around": {
+				"priority": 10
+			},
+			"minecraft:annotation.open_door": {},
+			"minecraft:behavior.open_door": {
+				"close_door_after": true
+			},
+			"minecraft:variable_max_auto_step": {
+				"base_value": 1.5625,
+				"controlled_value": 1.5625,
+				"jump_prevented_value": 0.5625
+			}
+		},
+		"events": {
+			"si:transform_to_adult": {
+				"sequence": [
+					{
+						"queue_command": {
+							"command": [
+								"summon si:venatosaurus_impavidus ~ ~ ~"
+							]
+						}
+					},
+					{
+						"add": {
+							"component_groups": [
+								"si:despawn"
+							]
+						}
+					}
+				]
+			}
+		}
+	}
+}

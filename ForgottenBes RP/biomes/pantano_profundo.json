@@ -1,0 +1,26 @@
+{
+  "format_version": "1.26.0",
+  "minecraft:client_biome": {
+    "description": {
+      "identifier": "si:pantano_profundo"
+    },
+    "components": {
+      "minecraft:fog_appearance": {
+        "fog_identifier": "si:skull_swamp_fog"
+      },
+      "minecraft:water_appearance": {
+        "surface_color": "#233221",
+        "surface_opacity": 0.94
+      },
+      "minecraft:sky_color": {
+        "sky_color": "#5b6e61"
+      },
+      "minecraft:foliage_appearance": {
+        "color": "#2f5a2b"
+      },
+      "minecraft:grass_appearance": {
+        "color": "#4a6a2a"
+      }
+    }
+  }
+}

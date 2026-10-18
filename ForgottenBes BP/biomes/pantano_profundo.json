@@ -1,0 +1,70 @@
+{
+  "format_version": "1.26.0",
+  "minecraft:biome": {
+    "description": {
+      "identifier": "si:pantano_profundo"
+    },
+    "components": {
+      "minecraft:climate": {
+        "downfall": 1.0,
+        "snow_accumulation": [ 0.0, 0.0 ],
+        "temperature": 0.9
+      },
+      "minecraft:overworld_height": {
+        "noise_params": [ -0.45, 0.25 ]
+      },
+      "minecraft:surface_builder": {
+        "builder": {
+          "type": "minecraft:swamp",
+          "sea_floor_depth": 14,
+          "sea_floor_material": "minecraft:mud",
+          "foundation_material": "minecraft:mud",
+          "mid_material": "minecraft:mud",
+          "top_material": "minecraft:mud",
+          "sea_material": "minecraft:water",
+          "max_puddle_depth_below_sea_level": 48
+        }
+      },
+      "minecraft:replace_biomes": {
+        "replacements": [
+          {
+            "dimension": "minecraft:overworld",
+            "targets": [
+              "minecraft:deep_ocean",
+              "minecraft:deep_lukewarm_ocean",
+              "minecraft:lukewarm_ocean",
+              "minecraft:ocean"
+            ],
+            "amount": 0.6,
+            "noise_frequency_scale": 3
+          },
+          {
+            "dimension": "minecraft:overworld",
+            "targets": [
+              "minecraft:swampland",
+              "minecraft:swampland_mutated",
+              "minecraft:mangrove_swamp",
+              "minecraft:river"
+            ],
+            "amount": 0.6,
+            "noise_frequency_scale": 3
+          }
+        ]
+      },
+      "minecraft:tags": {
+        "tags": [
+          "si:super_pantano",
+          "si:pantano_profundo",
+          "mangrove_swamp",
+          "ocean",
+          "deep",
+          "overworld",
+          "monster",
+          "spawns_slimes_on_surface",
+          "spawns_warm_variant_frogs",
+          "slime"
+        ]
+      }
+    }
+  }
+}

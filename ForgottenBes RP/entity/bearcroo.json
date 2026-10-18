@@ -1,0 +1,51 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "si:bearcroo",
+            "materials": {
+                "default": "entity_alphatest"
+            },
+            "textures": {
+                "male1": "textures/entity/bearcro/male_bear_croc",
+                "male2": "textures/entity/bearcro/male_bear_croc2",
+                "female1": "textures/entity/bearcro/female_bear_croc",
+                "female2": "textures/entity/bearcro/female_bear_croc2"
+            },
+            "geometry": {
+                "default": "geometry.bearcroo"
+            },
+            "animations": {
+                "idle": "animation.bearcroc.idle",
+                "walk": "animation.bearcroc.walk",
+                "attack": "animation.bearcroc.attack",
+                "run": "animation.bearcroc.run",
+                "eat": "animation.bearcroc.eat",
+                "roar": "animation.bearcroc.roar",
+				"crag": "animation.bearcroc.crag",
+                "swim":"animation.bearcroc.swim",
+                "look_at_target": "animation.bearcroc.look_at_target"
+            },
+            "animation_controllers": [
+                {
+                    "move": "controller.animation.bearcroo.move"
+                },
+                {
+                    "attack": "controller.animation.bearcroo.attack"
+                },
+                {
+                    "eat": "controller.animation.bearcroo.eat"
+                },
+                {
+                    "look": "controller.animation.bearcroo.look"
+                }
+            ],
+            "render_controllers": [
+                "controller.render.bearcroo"
+            ],
+            "spawn_egg": {
+                "texture": "si_egg_bearcroo_item"
+            }
+        }
+    }
+}

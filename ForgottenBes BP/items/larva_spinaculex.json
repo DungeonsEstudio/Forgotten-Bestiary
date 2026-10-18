@@ -1,0 +1,26 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:item": {
+		"description": {
+			"identifier": "si:larva",
+			"menu_category": {
+				"category": "nature"
+			}
+		},
+		"components": {
+			"minecraft:icon": "si_larva_spinaculex",
+			"minecraft:use_modifiers": {
+				"use_duration": 1.6
+			},
+			"minecraft:food": {
+				"nutrition": 2,
+				"saturation_modifier": 1
+			},
+			"minecraft:use_animation": "eat",
+			"minecraft:cooldown": {
+				"category": "larva",
+				"duration": 1.0
+			}
+		}
+	}
+}

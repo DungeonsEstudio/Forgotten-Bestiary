@@ -1,0 +1,16 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_furnace": {
+		"description": {
+			"identifier": "si:cooked_medium_fish_meat_recipe"
+		},
+		"tags": [
+			"furnace",
+			"smoker",
+			"campfire",
+			"soul_campfire"
+		],
+		"input": "si:medium_fish_meet",
+		"output": "si:medium_fish_meet_cooked"
+	}
+}

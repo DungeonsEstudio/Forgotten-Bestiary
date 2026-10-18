@@ -1,0 +1,86 @@
+pack.name=The Forgotten Bestiary 1.1
+pack.description=The Forgotten Bestiary é um complemento para Minecraft Bedrock que transforma a sobrevivência em uma expedição de paleontologia e biologia especulativa, inspirada em The World of Kong.
+pack.nameR=The Forgotten Bestiary
+pack.descriptionR=The Forgotten Bestiary é um complemento para Minecraft Bedrock que transforma a sobrevivência em uma expedição de paleontologia e biologia especulativa, inspirada em The World of Kong.
+
+si.welcome.message=Bem-vindo, %s! Você adentra as terras ocultas de §dThe Forgotten Bestiary§r.
+
+effect.si.derretimiento_cerebral=§c§lInfectado com Derretimento Cerebral
+effect.si.curado=§a§lCurado
+
+entity.si:venatosaurus_impavidus.name=§4Venatosaurus Impavidus
+entity.si:bloodfish.name=§bBloodfish
+entity.si:sepulcro.name=§bSepulcro
+entity.si:spinaculex.name=§4Spinaculex
+entity.si:dragonskin.name=§eDragonskin
+entity.si:thrown_bile.name=§5Bile
+entity.si:bearcroo.name=Bearcroo
+entity.si:bloodfish_baby.name=Filhote de Bloodfish
+entity.si:baby_venatosaurus_impavidus.name=Filhote de Venatosaurus Impavidus
+entity.si:larba_spinaculex.name=Larva de Spinaculex
+entity.si:larva_agua.name=Larva de Água
+entity.si:dirusuchus.name=§4Dirusuchus
+
+item.spawn_egg.entity.si:venatosaurus_impavidus.name=§4Venatosaurus Impavidus
+item.spawn_egg.entity.si:bloodfish.name=§bBloodfish
+item.spawn_egg.entity.si:sepulcro.name=§bSepulcro
+item.spawn_egg.entity.si:spinaculex.name=§4Spinaculex
+item.spawn_egg.entity.si:dragonskin.name=§eDragonskin
+item.spawn_egg.entity.si:bearcroo.name=§4Bombus Ursusuchus - Bearcroc
+item.spawn_egg.entity.si:bloodfish_baby.name=Gerar Filhote de Bloodfish
+item.spawn_egg.entity.si:baby_venatosaurus_impavidus.name=Gerar Filhote de Venatosaurus Impavidus
+item.spawn_egg.entity.si:larba_spinaculex.name=Gerar Larva de Spinaculex
+item.spawn_egg.entity.si:larva_agua.name=Gerar Larva de Água
+item.spawn_egg.entity.si:dirusuchus.name=§4Dirusuchus
+
+tile.si:bloodfish_egg.name=Ovo de Bloodfish
+tile.si:egg_venatosaurus_impavidus.name=Ovo de Venatosaurus Impavidus
+
+item.si:small_meat=Carne Pequena
+item.si:cooked_small_meet=Carne Pequena Cozida
+item.si:sepulcro_meet=Carne de Sepulcro
+item.si:cooked_medium_meet=Carne Média Cozida
+item.si:meet_big_cooked=Carne Grande Cozida
+item.si:meet_medium=Carne Média
+item.si:meet_big=Carne Grande
+item.si:small_fish_meet=Filé de Peixe Pequeno
+item.si:small_fish_meet_cooked=Filé de Peixe Pequeno Cozido
+item.si:medium_fish_meet=Filé de Peixe Médio
+item.si:medium_fish_meet_cooked=Filé de Peixe Médio Cozido
+item.si:big_fish_meet=Filé de Peixe Grande
+item.si:big_fish_meet_cooked=Filé de Peixe Grande Cozido
+
+item.si:scale_dragonskin=Escama de Dragonskin
+item.si:bile=Bile de Sepulcro
+item.si:spinaculex_blood=§cSangue de Spinaculex
+item.si:larva=Larva de Spinaculex
+item.si:venatosaurus_claw=Garra de Venatosaurus
+item.si:leather_bearcroo=Couro de Bearcroo
+item.si:leather_dirusuchus=Couro de Dirusuchus
+item.si:vastatosaurus_tooth=Dentes de ???
+
+item.si:egg_venatosaurus_impavidus=Ovo de Venatosaurus Impavidus
+item.si:bloodfish_egg=Ovo de Bloodfish
+item.si:sepulcro_egg=Ovo de Sepulcro
+item.si:spinaculex_egg=Ovo de Spinaculex
+item.si:bearcroo_egg=Ovo de Bearcroo
+item.si:egg_dragonskin=Ovo de Dragonskin
+item.si:dirusuchus_egg=Ovo de Dirusuchus
+
+item.si:dagger_venatosaurus=Adaga de Venatosaurus
+item.si:machete=Facão
+item.si:escudo_diru.name=Escudo de Diru
+item.si:bio_plates=Bio Placas
+item.si:bio_boots=Bio Botas
+item.si:bio_leggings=Bio Calças
+item.si:bio_helmet=Bio Capacete
+item.si:bio_chestplate=Bio Peitoral
+item.si:dirusuchus_boots=Botas de Dirusuchus
+
+item.si:posion_spinaculex=§4Poção de Spinaculex
+item.si:antidote=§aAntídoto
+
+tile.si:decoration_diru.name=§dTroféu de Dirusuchus
+item.si:head_diru=§4Cabeça de Dirusuchus
+
+item.si:bloodfish_buket=Balde com Bloodfish

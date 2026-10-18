@@ -1,0 +1,506 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "si:spinaculex",
+			"is_spawnable": true,
+			"is_summonable": true,
+			"is_experimental": false
+		},
+		"component_groups": {
+			"grounded": {
+				"minecraft:movement": {
+					"value": 0.2
+				},
+				"minecraft:movement.basic": {},
+				"minecraft:navigation.walk": {
+					"can_path_over_water": true,
+					"avoid_water": true,
+					"avoid_damage_blocks": true,
+					"can_swim": true,
+					"can_sink": false
+				},
+				"minecraft:spell_effects": {
+					"add_effects": [
+						{ "effect": "slow_falling", "duration": 9999999, "visible": false },
+						{ "effect": "regeneration", "duration": 9999999, "visible": false }
+					]
+				},
+				"minecraft:environment_sensor": {
+					"triggers": [
+						{
+							"event": "take_off",
+							"filters": {
+								"test": "is_underwater",
+								"operator": "==",
+								"value": true
+							}
+						}
+					]
+				},
+				"minecraft:behavior.random_stroll": {
+					"priority": 8,
+					"speed_multiplier": 1
+				},
+				"minecraft:physics": {
+					"has_gravity": true
+				},
+				"minecraft:timer": {
+					"looping": false,
+					"time": [15, 15],
+					"time_down_event": {
+						"event": "take_off",
+						"target": "self"
+					}
+				},
+				"minecraft:behavior.delayed_attack": {
+					"priority": 2,
+					"track_target": true,
+					"sound_event": "attack",
+					"melee_fov": 360,
+					"cooldown_time": 0.1,
+					"speed_multiplier": 2,
+					"reach_multiplier": 1,
+					"attack_duration": 0.75,
+					"hit_delay_pct": 0.506667
+				}
+			},
+			"flying": {
+				"minecraft:can_fly": {},
+				"minecraft:movement": {
+					"value": 0.75
+				},
+				"minecraft:movement.glide": {
+					"start_speed": 0.75,
+					"speed_when_turning": 0.75
+				},
+				"minecraft:flying_speed": {
+					"value": 0.15
+				},
+				"minecraft:behavior.circle_around_anchor": {
+					"priority": 6,
+					"radius_change": 1,
+					"goal_radius": 5,
+					"height_offset_range": [2, 7],
+					"height_above_target_range": [2, 2],
+					"angle_change": 30,
+					"radius_range": [18, 19],
+					"radius_adjustment_chance": 0.004,
+					"height_adjustment_chance": 0.002857
+				},
+				"minecraft:behavior.swoop_attack": {
+					"priority": 1,
+					"damage_reach": 0.7,
+					"speed_multiplier": 1.875,
+					"delay_range": [0.3, 0.8]
+				},
+				"minecraft:physics": {
+					"has_gravity": false
+				},
+				"minecraft:timer": {
+					"looping": false,
+					"time": [15, 15],
+					"time_down_event": {
+						"event": "prepare_landing",
+						"target": "self"
+					}
+				}
+			},
+			"landing": {
+				"minecraft:can_fly": {},
+				"minecraft:movement": {
+					"value": 0.15
+				},
+				"minecraft:movement.hover": {
+					"max_turn": 10
+				},
+				"minecraft:navigation.hover": {
+					"can_path_over_water": true,
+					"avoid_damage_blocks": true,
+					"can_path_from_air": true,
+					"avoid_water": false
+				},
+				"minecraft:environment_sensor": {
+					"triggers": [
+						{
+							"event": "take_off",
+							"filters": {
+								"any_of": [
+									{
+										"test": "is_underwater",
+										"operator": "==",
+										"value": true
+									},
+									{
+										"test": "in_water_or_rain",
+										"operator": "==",
+										"value": true
+									}
+								]
+							}
+						}
+					]
+				},
+				"minecraft:flying_speed": {
+					"value": 0.15
+				},
+				"minecraft:behavior.random_hover": {
+					"priority": 8,
+					"hover_height": [1, 3],
+					"xz_dist": 5,
+					"y_dist": 2,
+					"y_offset": -1,
+					"interval": 8
+				},
+				"minecraft:physics": {
+					"has_gravity": false
+				},
+				"minecraft:timer": {
+					"looping": false,
+					"time": [5, 5],
+					"time_down_event": {
+						"event": "land",
+						"target": "self"
+					}
+				}
+			},
+			"ceara_male": {
+				"minecraft:variant": {
+					"value": 0
+				}
+			},
+			"ceara_female": {
+				"minecraft:variant": {
+					"value": 1
+				}
+			},
+			"adult": {
+				"minecraft:experience_reward": {
+					"on_death": "query.last_hit_by_player?math.random(1,3):0"
+				}
+			},
+			"find_mount": {
+				"minecraft:behavior.find_mount": {
+					"priority": 0,
+					"avoid_water": false,
+					"mount_distance": 3,
+					"start_delay": 0,
+					"within_radius": 32
+				}
+			},
+			"mount_sensor": {
+				"minecraft:environment_sensor": {
+					"triggers": [
+						{
+							"filters": {
+								"test": "is_riding",
+								"subject": "self",
+								"value": true
+							},
+							"event": "start_animation"
+						}
+					]
+				}
+			},
+			"mounted": {
+				"minecraft:physics": {
+					"has_gravity": false
+				}
+			},
+			"timer_animation": {
+				"minecraft:timer": {
+					"time": [4.125, 4.125],
+					"looping": false,
+					"time_down_event": {
+						"event": "stop_riding",
+						"target": "self"
+					}
+				}
+			},
+			"nothing": {}
+		},
+		"components": {
+			"minecraft:type_family": {
+				"family": [
+					"spinaculex",
+					"parrot_tame"
+				]
+			},
+			"minecraft:collision_box": {
+				"width": 0.875,
+				"height": 0.625
+			},
+			"minecraft:loot": {
+				"table": "loot_tables/entities/spinaculex.json"
+			},
+			"minecraft:jump.static": {},
+			"minecraft:breathable": {
+				"total_supply": 15,
+				"suffocate_time": 0
+			},
+			"minecraft:health": {
+				"value": 15,
+				"max": 15
+			},
+			"minecraft:attack": {
+				"damage": 6
+			},
+			"minecraft:follow_range": {
+				"value": 128,
+				"max": 128
+			},
+			"minecraft:behavior.float": {
+				"priority": 0
+			},
+			"minecraft:damage_sensor": {
+				"triggers": [
+					{
+						"cause": "fall",
+						"deals_damage": "no"
+					}
+				]
+			},
+			"minecraft:behavior.random_look_around": {
+				"priority": 11
+			},
+			"minecraft:behavior.look_at_player": {
+				"priority": 10,
+				"look_distance": 8,
+				"probability": 0.02
+			},
+			"minecraft:behavior.look_at_entity": {
+				"priority": 12,
+				"look_distance": 8,
+				"probability": 0.05,
+				"look_time": [3, 6],
+				"filters": {
+					"none_of": [
+						{
+							"test": "is_family",
+							"subject": "other",
+							"value": "inanimate"
+						}
+					]
+				}
+			},
+			"minecraft:behavior.nearest_attackable_target": {
+				"priority": 4,
+				"reselect_targets": false,
+				"within_radius": 64,
+				"target_search_height": 80,
+				"attack_interval": 1,
+				"entity_types": [
+					{
+						"filters": {
+							"all_of": [
+								{
+									"test": "is_difficulty",
+									"operator": "!=",
+									"value": "peaceful"
+								},
+								{
+									"test": "is_family",
+									"subject": "other",
+									"operator": "!=",
+									"value": "inanimate"
+								},
+								{
+									"any_of": [
+										
+										{ "test": "is_family", "subject": "other", "value": "player" },
+										{ "test": "is_family", "subject": "other", "value": "venatosaurus_impavilus" },
+										{ "test": "is_family", "subject": "other", "value": "dragonskin" },
+										{ "test": "is_family", "subject": "other", "value": "bearcroo" }
+									]
+								}
+							]
+						},
+						"must_see": false,
+						"max_dist": 64
+					}
+				]
+			},
+			"minecraft:ambient_sound_interval": {
+				"value": 8,
+				"range": 4
+			},
+			"minecraft:behavior.hurt_by_target": {
+				"priority": 1,
+				"entity_types": {
+					"filters": {
+						"all_of": [
+							{
+								"test": "is_difficulty",
+								"operator": "!=",
+								"value": "peaceful"
+							},
+							{
+								"any_of": [
+									{ "test": "is_family", "subject": "other", "value": "player" },
+									{ "test": "is_family", "subject": "other", "value": "venatosaurus_impavilus" },
+									{ "test": "is_family", "subject": "other", "value": "dragonskin" },
+									{ "test": "is_family", "subject": "other", "value": "bearcroo" }
+								]
+							}
+						]
+					}
+				}
+			}
+		},
+		"events": {
+			"minecraft:entity_spawned": {
+				"sequence": [
+					{
+						"add": {
+							"component_groups": [
+								"grounded",
+								"adult"
+							]
+						}
+					},
+					{
+						"randomize": [
+							{
+								"weight": 50,
+								"add": {
+									"component_groups": [
+										"ceara_male"
+									]
+								}
+							},
+							{
+								"weight": 50,
+								"add": {
+									"component_groups": [
+										"ceara_female"
+									]
+								}
+							}
+						]
+					}
+				],
+				"trigger": "find_mount"
+			},
+			"take_off": {
+				"remove": {
+					"component_groups": [
+						"grounded",
+						"landing",
+						"find_mount",
+						"mount_sensor"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"flying"
+					]
+				}
+			},
+			"prepare_landing": {
+				"remove": {
+					"component_groups": [
+						"flying"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"landing"
+					]
+				}
+			},
+			"land": {
+				"remove": {
+					"component_groups": [
+						"landing"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"grounded"
+					]
+				},
+				"trigger": "find_mount"
+			},
+			"emergency_takeoff": {
+				"remove": {
+					"component_groups": [
+						"grounded",
+						"flying",
+						"landing",
+						"find_mount",
+						"mount_sensor"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"flying"
+					]
+				}
+			},
+			"find_mount": {
+				"randomize": [
+					{
+						"weight": 10,
+						"add": {
+							"component_groups": [
+								"nothing"
+							]
+						}
+					},
+					{
+						"weight": 90,
+						"add": {
+							"component_groups": [
+								"find_mount",
+								"mount_sensor"
+							]
+						}
+					}
+				]
+			},
+			"start_animation": {
+				"remove": {
+					"component_groups": [
+						"mount_sensor",
+						"grounded"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"timer_animation",
+						"mounted"
+					]
+				},
+				"randomize": [
+					{
+						"weight": 1,
+						"queue_command": {
+							"command": "effect @p poison 4 0"
+						}
+					},
+					{
+						"weight": 1,
+						"queue_command": {
+							"command": "tag @s add derretimiento_cerebral"
+						}
+					}
+				]
+			},
+			"stop_riding": {
+				"queue_command": {
+					"command": [
+						"ride @s stop_riding",
+						"ride @p stop_riding"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"timer_animation",
+						"mounted"
+					]
+				},
+				"trigger": "take_off"
+			}
+		}
+	}
+}

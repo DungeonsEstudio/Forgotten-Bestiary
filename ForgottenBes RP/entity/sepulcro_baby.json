@@ -1,0 +1,41 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "si:sepulcro_baby",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/baby_sepulcro_1"
+			},
+			"geometry": {
+				"default": "geometry.sepulcro_baby"
+			},
+			"animations": {
+				"body_system_paleo": "animation.body_system_paleo_baby_sepulcro.setup",
+				"land": "animation.baby_sepulcro.flop",
+				"swim": "animation.baby_sepulcro.swim",
+				"controller_swim": "controller.animation.sepulcro_baby.main"
+			},
+			"scripts": {
+				"initialize": [
+					"variable.rot_v = 0;"
+				],
+				"animate": [
+					{
+						"body_system_paleo": "query.is_in_water"
+					},
+					"controller_swim"
+				]
+			},
+			"render_controllers": [
+				"controller.render.sepulcro_baby"
+			],
+			"spawn_egg": {
+				"base_color": "#000000",
+				"overlay_color": "#FFFFFF"
+			}
+		}
+	}
+}

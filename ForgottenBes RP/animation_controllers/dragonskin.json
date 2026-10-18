@@ -1,0 +1,181 @@
+{
+	"format_version": "1.19.0",
+	"animation_controllers": {
+		"controller.animation.psilopterus.move": {
+			"states": {
+				"default": {
+					"animations": [
+						"walk"
+					],
+					"transitions": [
+						{
+							"climb": "query.is_wall_climbing"
+						},
+						{
+							"Idle": "query.ground_speed<0.3"
+						},
+						{
+							"run": "query.has_target||query.is_charged"
+						},
+						{
+							"swim": "query.is_in_water"
+						}
+					],
+					"blend_transition": 0.5
+				},
+				"Idle": {
+					"animations": [
+						"idle"
+					],
+					"transitions": [
+						{
+							"climb": "query.is_wall_climbing"
+						},
+						{
+							"default": "query.ground_speed>0.3"
+						},
+						{
+							"sleep": "query.is_sleeping"
+						},
+						{
+							"sit": "query.is_sitting"
+						},
+						{
+							"swim": "query.is_stackable"
+						}
+					],
+					"blend_transition": 0.5
+				},
+				"run": {
+					"animations": [
+						"walk"
+					],
+					"transitions": [
+						{
+							"climb": "query.is_wall_climbing"
+						},
+						{
+							"Idle": "query.ground_speed<0.3"
+						},
+						{
+							"default": "!query.has_target||query.is_charged"
+						},
+						{
+							"swim": "query.is_stackable"
+						}
+					],
+					"blend_transition": 0.5
+				},
+				"climb": {
+					"animations": [
+						"Climb"
+					],
+					"transitions": [
+						{
+							"Idle": "!query.is_wall_climbing&&query.ground_speed<0.3"
+						},
+						{
+							"default": "!query.is_wall_climbing&&query.ground_speed>=0.3"
+						}
+					],
+					"blend_transition": 0.5
+				},
+				"sleep": {
+					"animations": [
+						"sleep"
+					],
+					"transitions": [
+						{
+							"Idle": "!query.is_sleeping"
+						}
+					],
+					"blend_transition": 0.5
+				},
+				"sit": {
+					"animations": [
+						"sit"
+					],
+					"transitions": [
+						{
+							"Idle": "!query.is_sitting"
+						}
+					],
+					"blend_transition": 0.5
+				},
+				"swim": {
+					"animations": [
+						"swim"
+					],
+					"transitions": [
+						{
+							"climb": "query.is_wall_climbing"
+						},
+						{
+							"default": "!query.is_stackable"
+						},
+						{
+							"Idle": "!query.is_stackable"
+						},
+						{
+							"run": "!query.is_stackable"
+						}
+					],
+					"blend_transition": 0.5
+				}
+			}
+		},
+		"controller.animation.psilopterus.attack": {
+			"states": {
+				"attack": {
+					"animations": [
+						"attack"
+					],
+					"transitions": [
+						{
+							"default": "query.all_animations_finished"
+						}
+					]
+				},
+				"default": {
+					"transitions": [
+						{
+							"attack": "variable.attack_time>0"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.psilopterus.eat": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"eat": "query.is_eating"
+						}
+					],
+					"blend_transition": 0.2
+				},
+				"eat": {
+					"animations": [
+						"eat"
+					],
+					"transitions": [
+						{
+							"default": "!query.is_eating"
+						}
+					],
+					"blend_transition": 0.2
+				}
+			}
+		},
+		"controller.animation.psilopterus.look": {
+			"states": {
+				"default": {
+					"animations": [
+						"look_at_target"
+					]
+				}
+			}
+		}
+	}
+}

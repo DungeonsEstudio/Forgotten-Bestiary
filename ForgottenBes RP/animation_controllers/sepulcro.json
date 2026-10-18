@@ -1,0 +1,114 @@
+{
+	"format_version": "1.19.0",
+	"animation_controllers": {
+		"controller.animation.sepulcro.main": {
+			"states": {
+				"default": {
+					"animations": [
+						{
+							"land": "!query.is_in_water"
+						},
+						{
+							"swim": "query.is_in_water"
+						}
+					],
+					"transitions": [
+						{
+							"swim": "query.modified_move_speed>0.01&&query.modified_move_speed<=1.5&&!query.has_target&&query.is_in_water"
+						},
+						{
+							"swim": "query.modified_move_speed>1.5&&!query.has_target&&query.is_in_water"
+						}
+					],
+					"blend_transition": 0.5
+				},
+				"swim": {
+					"animations": [
+						{
+							"swim": "math.min(1,query.modified_move_speed*10)"
+						}
+					],
+					"transitions": [
+						{
+							"default": "query.modified_move_speed<=0.01||!query.is_in_water"
+						},
+						{
+							"swim": "query.modified_move_speed>1.5&&query.is_in_water"
+						}
+					],
+					"blend_transition": 0.3
+				},
+				"swim_fast": {
+					"animations": [
+						{
+							"swim": "math.min(1.5,query.modified_move_speed*8)"
+						}
+					],
+					"transitions": [
+						{
+							"default": "query.modified_move_speed<=0.01||!query.is_in_water"
+						},
+						{
+							"swim": "query.modified_move_speed<=1.5&&query.is_in_water"
+						}
+					],
+					"blend_transition": 0.3
+				}
+			}
+		},
+		"controller.animation.sepulcro.attack": {
+			"states": {
+				"attack": {
+					"animations": [
+						"attack"
+					],
+					"transitions": [
+						{
+							"default": "query.all_animations_finished"
+						}
+					]
+				},
+				"default": {
+					"transitions": [
+						{
+							"attack": "variable.attack_time>0"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.sepulcro.eat_mob": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"eat": "query.is_eating_mob"
+						}
+					]
+				},
+				"eat": {
+					"animations": [
+						"attack"
+					],
+					"transitions": [
+						{
+							"default": "!query.is_eating_mob"
+						}
+					],
+					"blend_transition": 0.1
+				}
+			}
+		},
+		"controller.animation.sepulcro.look": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"animations": [
+						"look_at_target"
+					]
+				}
+			}
+		}
+	}
+}

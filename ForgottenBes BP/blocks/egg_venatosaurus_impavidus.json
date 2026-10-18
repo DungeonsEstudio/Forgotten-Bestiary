@@ -1,0 +1,44 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:block": {
+		"description": {
+			"identifier": "si:egg_venatosaurus_impavidus",
+			"menu_category": {
+				"category": "nature"
+			}
+		},
+		"components": {
+			"minecraft:geometry": "geometry.egg_venatosaurus_impavidus",
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "si_egg_venatosaurus_impavidus",
+					"render_method": "alpha_test"
+				}
+			},
+			"minecraft:selection_box": {
+				"origin": [
+					-2.25,
+					0,
+					-2.25
+				],
+				"size": [
+					4.5,
+					8.5,
+					4.5
+				]
+			},
+			"minecraft:collision_box": {
+				"origin": [
+					-2.25,
+					0,
+					-2.25
+				],
+				"size": [
+					4.5,
+					8.5,
+					4.5
+				]
+			}
+		}
+	}
+}

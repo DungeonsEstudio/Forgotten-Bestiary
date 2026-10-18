@@ -1,0 +1,16 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_furnace": {
+		"description": {
+			"identifier": "si:cooked_big_meat_recipe"
+		},
+		"tags": [
+			"furnace",
+			"smoker",
+			"campfire",
+			"soul_campfire"
+		],
+		"input": "si:meet_big",
+		"output": "si:meet_big_cooked"
+	}
+}

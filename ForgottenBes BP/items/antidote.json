@@ -1,0 +1,16 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:item": {
+		"description": {
+			"identifier": "si:antidote",
+			"menu_category": {
+				"category": "equipment",
+				"group": "itemGroup.name.potion"
+			}
+		},
+		"components": {
+			"minecraft:max_stack_size": 1,
+			"minecraft:icon": "si_antidote"
+		}
+	}
+}

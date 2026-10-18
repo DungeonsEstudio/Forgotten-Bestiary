@@ -1,0 +1,23 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:item": {
+		"description": {
+			"identifier": "si:cooked_medium_meet",
+			"menu_category": {
+				"category": "equipment",
+				"group": "itemGroup.name.cookedFood"
+			}
+		},
+		"components": {
+			"minecraft:icon": "si_cooked_bearcroo",
+			"minecraft:use_modifiers": {
+				"use_duration": 1.6
+			},
+			"minecraft:food": {
+				"nutrition": 8,
+				"saturation_modifier": 1
+			},
+			"minecraft:use_animation": "eat"
+		}
+	}
+}

@@ -1,0 +1,28 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:fog_settings": {
+    "description": {
+      "identifier": "si:skull_swamp_fog"
+    },
+    "distance": {
+      "air": {
+        "fog_start": 1.0,
+        "fog_end": 35.0,
+        "fog_color": "#8a9c8e",
+        "render_distance_type": "fixed"
+      },
+      "weather": {
+        "fog_start": 0.0,
+        "fog_end": 20.0,
+        "fog_color": "#6f8075",
+        "render_distance_type": "fixed"
+      },
+      "water": {
+        "fog_start": 0.0,
+        "fog_end": 5.0,
+        "fog_color": "#0a1a10",
+        "render_distance_type": "fixed"
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "si:bio_leggings_craft"
+    },
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "XXX",
+      "X X",
+      "X X"
+    ],
+    "key": {
+      "X": { "item": "si:bio_plates" }
+    },
+    "result": { "item": "si:bio_leggings", "count": 1 }
+  }
+}

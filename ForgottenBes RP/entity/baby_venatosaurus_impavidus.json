@@ -1,0 +1,38 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "si:baby_venatosaurus_impavidus",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/baby_venatosaurus"
+			},
+			"geometry": {
+				"default": "geometry.baby_venatosaurus_impavidus"
+			},
+			"animations": {
+				"idle": "animation.baby_venatosaurus.idle",
+				"walk": "animation.baby_venatosaurus.walk",
+				"run": "animation.baby_venatosaurus.run",
+				"look_at_target": "animation.baby_venatosaurus.look_at_target"
+			},
+			"animation_controllers": [
+				{
+					"move": "controller.animation.baby_venatosaurus_impavidus.move"
+				},
+				{
+					"look": "controller.animation.baby_venatosaurus_impavidus.look"
+				}
+			],
+			"render_controllers": [
+				"controller.render.baby_venatosaurus_impavidus"
+			],
+			"spawn_egg": {
+				"base_color": "#000000",
+				"overlay_color": "#FFFFFF"
+			}
+		}
+	}
+}

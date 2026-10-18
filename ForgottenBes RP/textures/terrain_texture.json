@@ -1,0 +1,44 @@
+{
+	"num_mip_levels": 4,
+	"padding": 8,
+	"resource_pack_name": "Skull isle",
+	"texture_name": "atlas.terrain",
+	"texture_data": {
+		"si_bloodfish_egg": {
+			"textures": "textures/blocks/blood_fish_egg"
+		},
+		"si_spinaculex_egg": {
+			"textures": "textures/blocks/spinaculex_egg_water"
+		},
+		"si_sepulcro_egg": {
+			"textures": "textures/blocks/sepulcro_egg"
+		},
+		"si_egg_venatosaurus_impavidus": {
+			"textures": "textures/blocks/venatosaurus_egg/venatorusaurus_egg"
+		},
+		"si_egg_venatosaurus_impavidus_hach": {
+			"textures": "textures/blocks/venatosaurus_egg/venatorusaurus_egg_2"
+		},
+		"si_dragonskin_egg_block": {
+			"textures": "textures/blocks/dragonskin/egg_dragonskin"
+		},
+		"si_dragonskin_egg_block_hach": {
+			"textures": "textures/blocks/dragonskin/egg_dragonskin_hach"
+		},
+		"si_bearcroc_egg_block": {
+			"textures": "textures/blocks/bearcroo/egg_bearcroo"
+		},
+		"si_bearcroc_egg_block_hach": {
+			"textures": "textures/blocks/bearcroo/egg_bearcroo_hach"
+		},
+		"si_decoration_diru": {
+			"textures": "textures/blocks/decoration_diru"
+		},
+		"si_dirusuchus_egg_block": {
+			"textures": "textures/blocks/dirusuchus/diru_eggl"
+		},
+		"si_dirusuchus_egg_block_hach": {
+			"textures": "textures/blocks/dirusuchus/diru_egg_hachet"
+		}
+	}
+}

@@ -1,0 +1,36 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "si:larba_spinaculex",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/spinaculex_larba"
+			},
+			"geometry": {
+				"default": "geometry.larba_spinaculex"
+			},
+			"animations": {
+				"idle": "animation.larv.idle",
+				"walk": "animation.larv.move"
+			},
+			"animation_controllers": [
+				{
+					"move": "controller.animation.larba_spinaculex.move"
+				},
+				{
+					"look": "controller.animation.venatosaurus_impavidus.look"
+				}
+			],
+			"render_controllers": [
+				"controller.render.larba_spinaculex"
+			],
+			"spawn_egg": {
+				"base_color": "#000000",
+				"overlay_color": "#FFFFFF"
+			}
+		}
+	}
+}

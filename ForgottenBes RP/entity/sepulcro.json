@@ -1,0 +1,49 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "si:sepulcro",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"varian1": "textures/entity/sepulcro/sepulcro_0",
+				"varian2": "textures/entity/sepulcro/sepulcro_1",
+				"varian3": "textures/entity/sepulcro/sepulcro_2"
+			},
+			"geometry": {
+				"default": "geometry.sepulcro"
+			},
+			"animations": {
+				"body_system_paleo": "animation.body_system_paleo_sepulcro.setup",
+				"swim": "animation.sepulcro.swim",
+				"land": "animation.sepulcro.breached",
+				"attack": "animation.sepulcro.attack",
+				"eat": "animation.sepulcro.swallow_fish_set",
+				"controller_main": "controller.animation.sepulcro.main",
+				"controller_attack": "controller.animation.sepulcro.attack",
+				"controller_eat_mob": "controller.animation.sepulcro.eat_mob"
+			},
+			"scripts": {
+				"initialize": [
+					"variable.rot_v = 0;"
+				],
+				"animate": [
+					{
+						"body_system_paleo": "query.is_in_water"
+					},
+					"controller_main",
+					"controller_attack",
+					"controller_eat_mob"
+				]
+			},
+			"render_controllers": [
+				"controller.render.sepulcro"
+			],
+			"spawn_egg": {
+				"texture": "si_sepulcro_egg",
+				"texture_index": 0
+			}
+		}
+	}
+}

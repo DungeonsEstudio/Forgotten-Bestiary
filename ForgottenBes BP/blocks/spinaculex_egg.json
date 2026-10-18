@@ -1,0 +1,52 @@
+{
+	"format_version": "1.26.40",
+	"minecraft:block": {
+		"description": {
+			"identifier": "si:spinaculex_egg",
+			"menu_category": {
+				"category": "nature"
+			}
+		},
+		"components": {
+			"minecraft:liquid_detection": {
+				"detection_rules": [
+					{
+						"can_contain_liquid": true
+					}
+				]
+			},
+			"minecraft:loot": "loot_tables/empty.json",
+			"minecraft:geometry": "geometry.bloodfish_egg",
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "si_spinaculex_egg",
+					"render_method": "alpha_test"
+				}
+			},
+			"minecraft:selection_box": {
+				"origin": [
+					-8,
+					0,
+					-8
+				],
+				"size": [
+					16,
+					1,
+					16
+				]
+			},
+			"minecraft:collision_box": {
+				"origin": [
+					-8,
+					0,
+					-8
+				],
+				"size": [
+					16,
+					1,
+					16
+				]
+			}
+		}
+	}
+}

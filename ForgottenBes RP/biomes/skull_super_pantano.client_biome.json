@@ -1,0 +1,26 @@
+{
+  "format_version": "1.26.0",
+  "minecraft:client_biome": {
+    "description": {
+      "identifier": "si:super_selva"
+    },
+    "components": {
+      "minecraft:fog_appearance": {
+        "fog_identifier": "si:skull_jungle_fog"
+      },
+      "minecraft:water_appearance": {
+        "surface_color": "#0f503a",
+        "surface_opacity": 0.88
+      },
+      "minecraft:sky_color": {
+        "sky_color": "#3b694b"
+      },
+      "minecraft:foliage_appearance": {
+        "color": "#084119"
+      },
+      "minecraft:grass_appearance": {
+        "color": "#1b4b1a"
+      }
+    }
+  }
+}

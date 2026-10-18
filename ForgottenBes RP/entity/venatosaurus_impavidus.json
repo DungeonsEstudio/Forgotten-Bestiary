@@ -1,0 +1,50 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "si:venatosaurus_impavidus",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"male": "textures/entity/venatosaurus_impavilus/venatoraururs_male",
+				"female": "textures/entity/venatosaurus_impavilus/venatosaurus_female"
+			},
+			"geometry": {
+				"default": "geometry.venatosaurus.impavidus"
+			},
+			"animations": {
+				"idle": "animation.venatosaurus_impavilus.idle",
+				"walk": "animation.venatosaurus_impavilus.walk",
+				"attack": "animation.venatosaurus_impavilus.attack",
+				"run": "animation.venatosaurus_impavilus.run",
+				"eat": "animation.venatosaurus.impavidus.eat",
+				"roar": "animation.venatosaurus_impavilus.roar",
+				"pounce": "animation.venatosaurus.impavidus.pounce",
+				"crouch": "animation.venatosaurus.impavidus.cruch",
+				"wiggle": "animation.venatosaurus.impavidus.wiggle",
+				"look_at_target": "animation.venatosaurus_impavilus.look_at_target"
+			},
+			"animation_controllers": [
+				{
+					"move": "controller.animation.venatosaurus_impavidus.move"
+				},
+				{
+					"attack": "controller.animation.venatosaurus_impavidus.attack"
+				},
+				{
+					"eat": "controller.animation.venatosaurus_impavidus.eat"
+				},
+				{
+					"look": "controller.animation.venatosaurus_impavidus.look"
+				}
+			],
+			"render_controllers": [
+				"controller.render.venatosaurus_impavidus"
+			],
+			"spawn_egg": {
+				"texture": "si_egg_venatosaurus_impavilus_item"
+			}
+		}
+	}
+}

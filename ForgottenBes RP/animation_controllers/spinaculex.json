@@ -1,0 +1,130 @@
+{
+	"format_version": "1.19.0",
+	"animation_controllers": {
+		"controller.animation.cearadactylus.movement": {
+			"initial_state": "fly",
+			"states": {
+				"fly": {
+					"animations": [
+						"fly",
+						{
+							"attack": "query.is_delayed_attacking"
+						},
+						{
+							"pitch": "!query.is_on_ground"
+						}
+					],
+					"blend_transition": 0.2,
+					"transitions": [
+						{
+							"idle": "query.is_on_ground"
+						},
+						{
+							"riding": "query.is_riding"
+						}
+					]
+				},
+				"idle": {
+					"animations": [
+						"idle"
+					],
+					"blend_transition": 0.2,
+					"transitions": [
+						{
+							"fly": "!query.is_on_ground"
+						},
+						{
+							"walk": "query.modified_move_speed>=0.1&&query.modified_move_speed<1.3&&!query.is_in_water"
+						},
+						{
+							"run": "query.modified_move_speed>=1.3&&!query.is_in_water"
+						},
+						{
+							"riding": "query.is_riding"
+						}
+					]
+				},
+				"walk": {
+					"animations": [
+						"walk"
+					],
+					"blend_transition": 0.2,
+					"transitions": [
+						{
+							"fly": "!query.is_on_ground"
+						},
+						{
+							"idle": "query.modified_move_speed<0.1"
+						},
+						{
+							"run": "query.modified_move_speed>=1.3&&!query.is_in_water"
+						},
+						{
+							"riding": "query.is_riding"
+						}
+					]
+				},
+				"run": {
+					"animations": [
+						"walk"
+					],
+					"blend_transition": 0.2,
+					"transitions": [
+						{
+							"fly": "!query.is_on_ground"
+						},
+						{
+							"walk": "query.modified_move_speed<1.3&&query.modified_move_speed>=0.1"
+						},
+						{
+							"idle": "query.modified_move_speed<0.1"
+						},
+						{
+							"riding": "query.is_riding"
+						}
+					]
+				},
+				"riding": {
+					"animations": [
+						"end"
+					],
+					"transitions": [
+						{
+							"fly": "!query.is_riding"
+						},
+						{
+							"idle": "query.is_on_ground&&!query.is_riding"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.dracovenator.look": {
+			"states": {
+				"default": {
+					"animations": [
+						{
+							"look_at_target": 1
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.cearadactylus.death": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"death": "!query.is_alive"
+						}
+					]
+				},
+				"death": {
+					"on_entry": [
+						"/playsound mob.cearadactylus.death @a[r=20] ~ ~ ~ 1.0"
+					]
+				}
+			}
+		}
+	}
+}

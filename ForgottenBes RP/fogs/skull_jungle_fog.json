@@ -1,0 +1,28 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:fog_settings": {
+    "description": {
+      "identifier": "si:skull_jungle_fog"
+    },
+    "distance": {
+      "air": {
+        "fog_start": 2.0,
+        "fog_end": 44.0,
+        "fog_color": "#6f9a78",
+        "render_distance_type": "fixed"
+      },
+      "weather": {
+        "fog_start": 0.0,
+        "fog_end": 26.0,
+        "fog_color": "#587a66",
+        "render_distance_type": "fixed"
+      },
+      "water": {
+        "fog_start": 0.0,
+        "fog_end": 16.0,
+        "fog_color": "#163f31",
+        "render_distance_type": "fixed"
+      }
+    }
+  }
+}

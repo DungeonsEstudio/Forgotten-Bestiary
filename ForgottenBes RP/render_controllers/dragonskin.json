@@ -1,0 +1,25 @@
+{
+	"format_version": "1.20.80",
+	"render_controllers": {
+		"controller.render.dragonskin": {
+			"geometry": "geometry.default",
+			"materials": [
+				{
+					"*": "material.default"
+				}
+			],
+			"textures": [
+				"array.skins[query.variant]"
+			],
+			"arrays": {
+				"textures": {
+					"Array.skins": [
+						"Texture.variant_0",
+						"Texture.variant_1",
+						"Texture.aure"
+					]
+				}
+			}
+		}
+	}
+}

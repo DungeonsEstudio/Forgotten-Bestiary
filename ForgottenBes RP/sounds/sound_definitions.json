@@ -1,0 +1,89 @@
+{
+  "format_version": "1.14.0",
+  "sound_definitions": {
+    "mob.bloodfish.attack": {
+      "category": "hostile",
+      "sounds": [
+        "sounds/bloodfish/bloodfish_attack"
+      ]
+    },
+    "mob.venato_baby.ambient": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/venato_baby/venato_baby_1",
+        "sounds/venato_baby/venato_baby_2",
+        "sounds/venato_baby/venato_baby_3"
+      ]
+    },
+    "mob.venato_baby.bearcroo": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/bearcroo/baby_bearcroo"
+      ]
+    },
+    "mob.bearcroo.ambient": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/bearcroo/bearcroo_idle",
+        "sounds/bearcroo/bearcroo_idle2",
+        "sounds/bearcroo/bearcroo_idle3",
+        "sounds/bearcroo/bearcroo_idle4",
+        "sounds/bearcroo/bearcroo_idle5"
+      ]
+    },
+    "mob.bearcroo.hurt": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/bearcroo/bearcroo_hurt",
+        "sounds/bearcroo/bearcroo_hurt2",
+        "sounds/bearcroo/bearcroo_hurt3"
+      ]
+    },
+    "mob.bearcroo.roar": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/bearcroo/bearcroo_roar"
+      ]
+    },
+    "mob.venatosaurus_impavilus.roar": {
+      "category": "hostile",
+      "sounds": [
+        "sounds/venatosaurus_impavidus/impavidus_roar"
+      ]
+    },
+    "mob.venatosaurus_impavilus.hurt": {
+      "category": "hostile",
+      "sounds": [
+        "sounds/venatosaurus_impavidus/impavidus_daño"
+      ]
+    },
+     "mob.pocion.use": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/items/antidoto"
+      ]
+    },
+    "mob.venatosaurus_impavilus.death": {
+      "category": "hostile",
+      "sounds": [
+        "sounds/venatosaurus_impavidus/impavidus_death"
+      ]
+    },
+     "mob.dirusuchus.ambient": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/dirusuchus/idle",
+        "sounds/dirusuchus/idle_2",
+        "sounds/dirusuchus/idle_3"
+      ]
+    },
+    "mob.dirusuchus.hurt": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/dirusuchus/hurt"
+        
+       
+      ]
+    }
+  }
+}

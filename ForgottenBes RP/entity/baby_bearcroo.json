@@ -1,0 +1,38 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "si:baby_bearcroo",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/bb_bearcroo"
+			},
+			"geometry": {
+				"default": "geometry.baby_bearcroo"
+			},
+			"animations": {
+				"idle": "animation.baby_bearcroo.idle",
+				"walk": "animation.baby_bearcroo.walk",
+				"run": "animation.baby_bearcroo.run",
+				"look_at_target": "animation.baby_bearcroo.look_at_target"
+			},
+			"animation_controllers": [
+				{
+					"move": "controller.animation.baby_bearcroo.move"
+				},
+				{
+					"look": "controller.animation.baby_bearcroo.look"
+				}
+			],
+			"render_controllers": [
+				"controller.render.baby_bearcroo"
+			],
+			"spawn_egg": {
+				"base_color": "#000000",
+				"overlay_color": "#FFFFFF"
+			}
+		}
+	}
+}

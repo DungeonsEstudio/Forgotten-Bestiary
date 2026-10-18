@@ -1,0 +1,130 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.spinaculex",
+				"texture_width": 128,
+				"texture_height": 128,
+				"visible_bounds_width": 4,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "Spinaculex_body",
+					"pivot": [0, 7, 0],
+					"cubes": [
+						{"origin": [-2, 8, 1], "size": [4, 4, 0], "pivot": [1, 8, 0], "rotation": [-55, 0, 0], "uv": [48, 31]},
+						{"origin": [-3, 8, -1], "size": [6, 5, 0], "pivot": [2, 8, -2], "rotation": [-45, 0, 0], "uv": [48, 22]}
+					]
+				},
+				{
+					"name": "body",
+					"parent": "Spinaculex_body",
+					"pivot": [0, 5, 3]
+				},
+				{
+					"name": "bone10",
+					"parent": "body",
+					"pivot": [-1, 9, 1],
+					"rotation": [30.08796, -4.1313, -2.7657],
+					"cubes": [
+						{"origin": [-1.04813, 4.13401, 0.50226], "size": [0, 5, 13], "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "bone11",
+					"parent": "body",
+					"pivot": [1, 9, 1],
+					"rotation": [30.08796, 4.1313, 2.7657],
+					"cubes": [
+						{"origin": [1.04813, 4.13401, 0.50226], "size": [0, 5, 13], "uv": [0, 18]}
+					]
+				},
+				{
+					"name": "body_2",
+					"parent": "body",
+					"pivot": [0, 5, 7],
+					"rotation": [-5, 0, 0],
+					"cubes": [
+						{"origin": [-1, 2, 6], "size": [2, 4, 7], "uv": [0, 45]},
+						{"origin": [0, 4, 12], "size": [0, 4, 2], "uv": [18, 45]}
+					]
+				},
+				{
+					"name": "bone3",
+					"parent": "body",
+					"pivot": [0, 3, -2],
+					"rotation": [5, 0, 0],
+					"cubes": [
+						{"origin": [-1, 2, -4], "size": [2, 2, 2], "uv": [48, 27]},
+						{"origin": [-2, 2, -4], "size": [1, 2, 2], "inflate": 0.1, "uv": [48, 35]},
+						{"origin": [0, 2, -10], "size": [0, 2, 6], "uv": [48, 14]},
+						{"origin": [1, 2, -4], "size": [1, 2, 2], "inflate": 0.1, "uv": [22, 50]}
+					]
+				},
+				{
+					"name": "bone13",
+					"parent": "body",
+					"pivot": [0, 5, 2],
+					"cubes": [
+						{"origin": [-3, 2, -2], "size": [6, 6, 8], "uv": [26, 0]}
+					]
+				},
+				{
+					"name": "bone4",
+					"parent": "Spinaculex_body",
+					"pivot": [-3, 4, 0],
+					"rotation": [0, -42.5, 0],
+					"cubes": [
+						{"origin": [-13, 0, 0], "size": [11, 9, 0], "uv": [26, 14]}
+					]
+				},
+				{
+					"name": "bone6",
+					"parent": "Spinaculex_body",
+					"pivot": [-3, 3, 3],
+					"rotation": [0, 32.5, 0],
+					"cubes": [
+						{"origin": [-13, 0, 3], "size": [11, 9, 0], "uv": [26, 23]}
+					]
+				},
+				{
+					"name": "bone7",
+					"parent": "Spinaculex_body",
+					"pivot": [-3, 3, 2],
+					"cubes": [
+						{"origin": [-13, 0, 2], "size": [11, 9, 0], "uv": [26, 32]}
+					]
+				},
+				{
+					"name": "bone5",
+					"parent": "Spinaculex_body",
+					"pivot": [3, 4, 0],
+					"rotation": [0, 42.5, 0],
+					"cubes": [
+						{"origin": [2, 0, 0], "size": [11, 9, 0], "uv": [0, 36]}
+					]
+				},
+				{
+					"name": "bone8",
+					"parent": "Spinaculex_body",
+					"pivot": [3, 3, 2],
+					"cubes": [
+						{"origin": [2, 0, 2], "size": [11, 9, 0], "uv": [22, 41]}
+					]
+				},
+				{
+					"name": "bone9",
+					"parent": "Spinaculex_body",
+					"pivot": [3, 3, 3],
+					"rotation": [0, -32.5, 0],
+					"cubes": [
+						{"origin": [2, 0, 3], "size": [11, 9, 0], "uv": [44, 41]}
+					]
+				}
+			]
+		}
+	]
+}

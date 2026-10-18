@@ -1,0 +1,16 @@
+{
+	"format_version": "1.20.80",
+	"render_controllers": {
+		"controller.render.dirusuchus": {
+			"geometry": "geometry.default",
+			"materials": [
+				{
+					"*": "material.default"
+				}
+			],
+			"textures": [
+				"query.variant==0?texture.diru_default:texture.diru_muted"
+			]
+		}
+	}
+}

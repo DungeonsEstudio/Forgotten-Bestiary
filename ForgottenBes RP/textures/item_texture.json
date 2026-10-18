@@ -1,0 +1,156 @@
+{
+	"resource_pack_name": "Skull isle",
+	"texture_name": "atlas.items",
+	"texture_data": {
+		"si_bloodfish_meet": {
+			"textures": "textures/items/bloodfish_meet"
+		},
+		"si_bloodfish_spaw": {
+			"textures": "textures/items/bloodfish_spaw"
+		},
+		"si_bloodfish_buket": {
+			"textures": "textures/items/blood_fish_cubet"
+		},
+		"si_cooked_bloodfish": {
+			"textures": "textures/items/cooked_bloodfish"
+		},
+		"si_dragonskin_egg": {
+			"textures": "textures/items/dragonskin_spawnwe"
+		},
+		"si_dragonskin_meet": {
+			"textures": "textures/items/dragonskin_meet"
+		},
+		"si_cooked_dragonskin": {
+			"textures": "textures/items/cooked_dragonsking"
+		},
+		"si_scale_dragonskin": {
+			"textures": "textures/items/scale_dragonskin"
+		},
+		"si_bile": {
+			"textures": "textures/items/bile"
+		},
+		"si_antidote": {
+			"textures": "textures/items/antidote"
+		},
+		"si_bio_plates": {
+			"textures": "textures/items/bio_plates"
+		},
+		"si_sepulcro_meet": {
+			"textures": "textures/items/sepulcro_meet"
+		},
+		"si_sepulcro_egg": {
+			"textures": "textures/items/sepulcro_spaw"
+		},
+		"si_egg_bearcroo_item": {
+			"textures": "textures/items/bearcro_spaw_egg"
+		},
+		"si_cooked_sepulcro": {
+			"textures": "textures/items/cooked_sepulcro"
+		},
+		"si_spinaculex_egg": {
+			"textures": "textures/items/spinaculex_egg"
+		},
+		"si_spinaculex_blood": {
+			"textures": "textures/items/spinaculex_blood"
+		},
+		"si_egg_venatosaurus_impavilus": {
+			"textures": "textures/items/egg_venatosaurus_item"
+		},
+		"si_egg_venatosaurus_impavilus_item": {
+			"textures": "textures/items/venatosaurus_spaw_egg"
+		},
+		"si_egg_bearcroo_items": {
+			"textures": "textures/items/bearcroc_egg_1"
+		},
+		"si_egg_spinaculex_items": {
+			"textures": "textures/items/espinaculex_egg_item"
+		},
+		"si_egg_sepulcro_items": {
+			"textures": "textures/items/sepulcro_egg_itemn"
+		},
+		"si_egg_dragonskin_items": {
+			"textures": "textures/items/dragonskin_egg_item"
+		},
+		"si_venatosaurus_impavilus_meet": {
+			"textures": "textures/items/venatosaurus_impavilus_meet"
+		},
+		"si_venatosaurus_impavilus_meet_cooked": {
+			"textures": "textures/items/venatosaurus_impavilus_meet_cooked"
+		},
+		"si_egg_bloodfish": {
+			"textures": "textures/items/egg_bloodfish_item"
+		},
+		"si_posion_spinaculex": {
+			"textures": "textures/items/cura_spinaculex"
+		},
+		"si_dagger_venatosaurus": {
+			"textures": "textures/items/daga_venatosaurus"
+		},
+		"si_larva_spinaculex": {
+			"textures": "textures/items/Larva_pendeja"
+		},
+		"si_machete": {
+			"textures": "textures/items/machete"
+		},
+		"si_venatosaurus_claw": {
+			"textures": "textures/items/venatosaurus_claw"
+		},
+		"si_meet_bearcroo": {
+			"textures": "textures/items/meet_bearcroo"
+		},
+		"si_cooked_bearcroo": {
+			"textures": "textures/items/cokked_bearcoo"
+		},
+		"si_bio_helmet": {
+			"textures": "textures/items/bioplate_helmet"
+		},
+		"si_bio_chestplate": {
+			"textures": "textures/items/bioplate_chest"
+		},
+		"si_bio_leggings": {
+			"textures": "textures/items/bioplate_leggins"
+		},
+		"si_bio_boots": {
+			"textures": "textures/items/bioplate_boots"
+		},
+		"si_leather_bearcroo": {
+			"textures": "textures/items/leather_bearcroo"
+		},
+		"si_spawn_egg_diru": {
+			"textures": "textures/items/dirusuchus_spawegg"
+		},
+		"si_head_diru": {
+			"textures": "textures/items/head_dirusuchus"
+		},
+		"si_vastatosaurus_tooth": {
+			"textures": "textures/items/bastatosaurus_tooth"
+		},
+		"si_dirusuchus_boots": {
+			"textures": "textures/items/dirosuchus_boots"
+		},
+		"si_small_fish_meet": {
+			"textures": "textures/items/small_fish_fillet"
+		},
+		"si_medium_fish_meet": {
+			"textures": "textures/items/medium_fish_fillet"
+		},
+		"si_big_fish_meet": {
+			"textures": "textures/items/large_fish_fillet"
+		},
+		"si_small_fish_meet_cooked": {
+			"textures": "textures/items/small_fish_fillet_cooked"
+		},
+		"si_medium_fish_meet_cooked": {
+			"textures": "textures/items/medium_fish_fillet_cooked"
+		},
+		"si_big_fish_meet_cooked": {
+			"textures": "textures/items/large_fish_fillet_cooked"
+		},
+		"si_item_egg_diru": {
+			"textures": "textures/items/item_dirusuchus_egg"
+		},
+		"si_leather_dirusuchus": {
+			"textures": "textures/items/dirusuchus_leather"
+		}
+	}
+}

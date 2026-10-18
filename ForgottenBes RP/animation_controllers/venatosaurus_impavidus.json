@@ -1,0 +1,164 @@
+{
+	"format_version": "1.19.0",
+	"animation_controllers": {
+		"controller.animation.venatosaurus_impavidus.move": {
+			"states": {
+				"crouch": {
+					"animations": [
+						"crouch",
+						"walk"
+					],
+					"transitions": [
+						{
+							"default": "!query.is_stalking&&!query.is_interested"
+						},
+						{
+							"wiggle": "query.is_interested"
+						}
+					],
+					"blend_transition": 0.5
+				},
+				"default": {
+					"animations": [
+						{
+							"walk": "!query.is_in_water"
+						},
+						{
+							"walk": "query.is_in_water"
+						}
+					],
+					"transitions": [
+						{
+							"crouch": "query.is_stalking"
+						},
+						{
+							"Idle": "query.ground_speed<0.2"
+						},
+						{
+							"run": "query.has_target||query.is_charged"
+						}
+					],
+					"blend_transition": 0.5
+				},
+				"pounce": {
+					"animations": [
+						"pounce"
+					],
+					"transitions": [
+						{
+							"default": "query.is_on_ground"
+						}
+					],
+					"blend_transition": 0.5
+				},
+				"wiggle": {
+					"animations": [
+						"wiggle"
+					],
+					"transitions": [
+						{
+							"default": "!query.has_target&&query.is_on_ground"
+						},
+						{
+							"crouch": "query.is_on_ground&&!query.is_interested&&query.is_stalking"
+						},
+						{
+							"pounce": "!query.is_on_ground"
+						}
+					],
+					"blend_transition": 0.5
+				},
+				"Idle": {
+					"animations": [
+						{
+							"idle": "!query.is_in_water"
+						},
+						{
+							"walk": "query.is_in_water"
+						}
+					],
+					"transitions": [
+						{
+							"default": "query.ground_speed>0.2"
+						}
+					],
+					"blend_transition": 0.5
+				},
+				"run": {
+					"animations": [
+						{
+							"run": "!query.is_in_water"
+						},
+						{
+							"walk": "query.is_in_water"
+						}
+					],
+					"transitions": [
+						{
+							"Idle": "query.ground_speed<0.2"
+						},
+						{
+							"default": "!query.has_target||query.is_charged"
+						}
+					],
+					"blend_transition": 0.5
+				}
+			}
+		},
+		"controller.animation.venatosaurus_impavidus.attack": {
+			"states": {
+				"attack": {
+					"animations": [
+						"attack"
+					],
+					"transitions": [
+						{
+							"default": "query.all_animations_finished"
+						}
+					]
+				},
+				"default": {
+					"transitions": [
+						{
+							"attack": "variable.attack_time>0"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.venatosaurus_impavidus.eat": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"eat": "query.is_eating"
+						}
+					],
+					"blend_transition": 0.2
+				},
+				"eat": {
+					"animations": [
+						"eat"
+					],
+					"transitions": [
+						{
+							"default": "!query.is_eating"
+						}
+					],
+					"blend_transition": 0.2
+				}
+			}
+		},
+		"controller.animation.venatosaurus_impavidus.look": {
+			"states": {
+				"default": {
+					"animations": [
+						{
+							"look_at_target": 1
+						}
+					]
+				}
+			}
+		}
+	}
+}

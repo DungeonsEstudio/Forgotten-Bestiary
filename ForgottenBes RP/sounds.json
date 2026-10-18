@@ -1,0 +1,235 @@
+{
+    "entity_sounds": {
+        "entities": {
+            "si:bloodfish": {
+                "volume": 1.0,
+                "pitch": 1.0,
+                "events": {
+                    "ambient": {
+                        "sound": "mob.fish.flop",
+                        "volume": 1.0,
+                        "pitch": 0.85
+                    },
+                    "attack": {
+                        "sound": "mob.bloodfish.attack",
+                        "volume": 1.0,
+                        "pitch": 1.0
+                    },
+                    "hurt": {
+                        "sound": "mob.fish.hurt",
+                        "volume": 1.0,
+                        "pitch": 0.85
+                    }
+                }
+            },
+            "si:spinaculex": {
+                "volume": 1.0,
+                "pitch": 1.0,
+                "events": {
+                    "ambient": {
+                        "sound": "mob.bee.loop",
+                        "volume": 0.7,
+                        "pitch": 0.55
+                    },
+                    "hurt": {
+                        "sound": "mob.bee.hurt",
+                        "volume": 1.0,
+                        "pitch": 0.55
+                    },
+                    "death": {
+                        "sound": "mob.bee.death",
+                        "volume": 1.0,
+                        "pitch": 0.55
+                    }
+                }
+            },
+            "si:dragonskin": {
+                "volume": 1.0,
+                "pitch": 1.0,
+                "events": {
+                    "ambient": {
+                        "sound": "mob.silverfish.say",
+                        "volume": 0.75,
+                        "pitch": 0.8
+                    },
+                    "attack": {
+                        "sound": "mob.creeper.say",
+                        "volume": 1.1,
+                        "pitch": 1.35
+                    },
+                    "hurt": {
+                        "sound": "mob.axolotl.hurt",
+                        "volume": 1.0,
+                        "pitch": 0.45
+                    },
+                    "death": {
+                        "sound": "mob.axolotl.death",
+                        "volume": 1.0,
+                        "pitch": 0.4
+                    },
+                    "step": {
+                        "sound": "mob.armadillo.step",
+                        "volume": 0.5,
+                        "pitch": 0.9
+                    }
+                }
+            },
+            "si:venatosaurus_impavidus": {
+                "volume": 1.0,
+                "pitch": 1.0,
+                "events": {
+                    "ambient": {
+                        "sound": "mob.phantom.bite",
+                        "volume": 1.0,
+                        "pitch": 0.8
+                    },
+                    "attack": {
+                        "sound": "mob.phantom.bite",
+                        "volume": 1.0,
+                        "pitch": 0.6
+                    },
+                    "roar": {
+                        "sound": "mob.venatosaurus_impavilus.roar",
+                        "volume": 1,
+                        "pitch": 1
+                    },
+                    "hurt": {
+                        "sound": "mob.venatosaurus_impavilus.hurt",
+                        "volume": 0.8,
+                        "pitch": 1.3
+                    },
+                    "step": {
+                        "sound": "mob.hoglin.step",
+                        "volume": 2,
+                        "pitch": 1.2
+                    },
+                    "death": {
+                        "sound": "mob.venatosaurus_impavilus.death",
+                        "volume": 1.0,
+                        "pitch": 1.1
+                    }
+                }
+            },
+            "si:baby_venatosaurus_impavidus": {
+                "volume": 1.0,
+                "pitch": 1.0,
+                "events": {
+                    "ambient": {
+                        "sound": "mob.venato_baby.ambient",
+                        "volume": 1.0,
+                        "pitch": 1.0
+                    },
+                    "step": {
+                        "sound": "mob.hoglin.step",
+                        "volume": 0.6,
+                        "pitch": 1.4
+                    }
+                }
+            },
+            "si:baby_bearcroo": {
+                "volume": 1.0,
+                "pitch": 1.0,
+                "events": {
+                    "ambient": {
+                        "sound": "mob.venato_baby.bearcroo",
+                        "volume": 1.0,
+                        "pitch": 1.0
+                    },
+                    "step": {
+                        "sound": "mob.hoglin.step",
+                        "volume": 0.6,
+                        "pitch": 1.4
+                    }
+                }
+            },
+            "si:bearcroo": {
+                "volume": 1.0,
+                "pitch": 1.0,
+                "events": {
+                    "attack": {
+                        "sound": "mob.phantom.bite",
+                        "volume": 1.0,
+                        "pitch": 0.7
+                    },
+                    "ambient": {
+                        "sound": "mob.bearcroo.ambient",
+                        "volume": 1.0,
+                        "pitch": 1.0
+                    },
+                    "roar": {
+                        "sound": "mob.bearcroo.roar",
+                        "volume": 1.0,
+                        "pitch": 1.0
+                    },
+                    "hurt": {
+                        "sound": "mob.bearcroo.hurt",
+                        "volume": 1.0,
+                        "pitch": 1.0
+                    },
+                    "step": {
+                        "sound": "mob.hoglin.step",
+                        "volume": 0.6,
+                        "pitch": 1.2
+                    },
+                    "death": {
+                        "sound": "mob.hoglin.death",
+                        "volume": 1.2,
+                        "pitch": 0.7
+                    }
+                }
+            },
+            "si:dirusuchus": {
+                "volume": 1.0,
+                "pitch": 1.0,
+                "events": {
+                    "attack": {
+                        "sound": "mob.phantom.bite",
+                        "volume": 0.7,
+                        "pitch": 1.4
+                    },
+                    "ambient": {
+                        "sound": "mob.dirusuchus.ambient",
+                        "volume": 2.0,
+                        "pitch": 1.1
+                    },
+                    "hurt": {
+                        "sound": "mob.dirusuchus.hurt",
+                        "volume": 2.0,
+                        "pitch": 1.0
+                    },
+                    "step": {
+                        "sound": "mob.hoglin.step",
+                        "volume": 1.0,
+                        "pitch": 1.6
+                    },
+                    "death": {
+                        "sound": "mob.ravager.death",
+                        "volume": 1.5,
+                        "pitch": 0.6
+                    }
+                }
+            },
+            "si:sepulcro": {
+                "volume": 1.0,
+                "pitch": 1.0,
+                "events": {
+                    "ambient": {
+                        "sound": "mob.fish.flop",
+                        "volume": 1.1,
+                        "pitch": 0.7
+                    },
+                    "attack": {
+                        "sound": "mob.bloodfish.attack",
+                        "volume": 1.1,
+                        "pitch": 0.7
+                    },
+                    "hurt": {
+                        "sound": "mob.fish.hurt",
+                        "volume": 1.0,
+                        "pitch": 0.7
+                    }
+                }
+            }
+        }
+    }
+}

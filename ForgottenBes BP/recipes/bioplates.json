@@ -1,0 +1,27 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "si:bio_plates"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      " I/",
+      " /I"
+    ],
+    "key": {
+      "I": {
+        "item": "si:scale_dragonskin"
+      },
+      "/": {
+        "item": "si:leather_bearcroo"
+      }
+    },
+    "result": {
+      "item": "si:bio_plates",
+      "count": 1
+    }
+  }
+}

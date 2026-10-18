@@ -1,0 +1,77 @@
+{
+	"format_version": "1.19.0",
+	"animation_controllers": {
+		"controller.animation.baby_bearcroo.move": {
+			"states": {
+				"default": {
+					"animations": [
+						{
+							"walk": "!query.is_in_water"
+						},
+						{
+							"walk": "query.is_in_water"
+						}
+					],
+					"transitions": [
+						{
+							"Idle": "query.ground_speed<=0.02"
+						},
+						{
+							"run": "query.ground_speed>4"
+						}
+					],
+					"blend_transition": 0.5
+				},
+				"Idle": {
+					"animations": [
+						{
+							"idle": "!query.is_in_water"
+						},
+						{
+							"walk": "query.is_in_water"
+						}
+					],
+					"transitions": [
+						{
+							"run": "query.ground_speed>4"
+						},
+						{
+							"default": "query.ground_speed>0.02&&query.ground_speed<=3"
+						}
+					],
+					"blend_transition": 0.5
+				},
+				"run": {
+					"animations": [
+						{
+							"run": "!query.is_in_water"
+						},
+						{
+							"walk": "query.is_in_water"
+						}
+					],
+					"transitions": [
+						{
+							"Idle": "query.ground_speed<=0.02"
+						},
+						{
+							"default": "query.ground_speed>0.02&&query.ground_speed<=3"
+						}
+					],
+					"blend_transition": 0.5
+				}
+			}
+		},
+		"controller.animation.baby_bearcroo.look": {
+			"states": {
+				"default": {
+					"animations": [
+						{
+							"look_at_target": 1
+						}
+					]
+				}
+			}
+		}
+	}
+}

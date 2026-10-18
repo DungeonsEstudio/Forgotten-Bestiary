@@ -1,0 +1,404 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "si:venatosaurus_impavidus",
+			"is_spawnable": true,
+			"is_summonable": true,
+			"is_experimental": false
+		},
+		"component_groups": {
+			"si:venatosaurus_macho": {
+				"minecraft:variant": {
+					"value": 0
+				}
+			},
+			"si:venatosaurus_hembra": {
+				"minecraft:variant": {
+					"value": 1
+				}
+			},
+			"roared": {
+				"minecraft:mark_variant": {
+					"value": 0
+				}
+			},
+			"roar_cooldown": {
+				"minecraft:timer": {
+					"time": 20,
+					"looping": false,
+					"time_down_event": {
+						"event": "giga:reset_roar"
+					}
+				}
+			}
+		},
+		"components": {
+			"minecraft:type_family": {
+				"family": [
+					"venatosaurus_impavilus",
+					"carnivore"
+				]
+			},
+			"minecraft:loot": {
+				"table": "loot_tables/entities/venatosaurus_impavilus.json"
+			},
+			"minecraft:knockback_resistance": {
+				"value": 0.5,
+				"max": 0.5
+			},
+			"minecraft:navigation.walk": {
+				"can_path_over_water": true,
+				"avoid_damage_blocks": true,
+				"avoid_portals": false,
+				"avoid_sun": false,
+				"avoid_water": true,
+				"can_breach": false,
+				"can_break_doors": false,
+				"can_jump": true,
+				"can_open_doors": false,
+				"can_open_iron_doors": false,
+				"can_pass_doors": true,
+				"can_path_from_air": false,
+				"can_path_over_lava": false,
+				"can_sink": true,
+				"can_swim": false,
+				"can_walk": true,
+				"can_walk_in_lava": false,
+				"is_amphibious": false
+			},
+			"minecraft:movement.basic": {},
+			"minecraft:jump.static": {
+				"jump_power": 0.42
+			},
+			"minecraft:behavior.random_stroll": {
+				"priority": 8,
+				"speed_multiplier": 1.2
+			},
+			"minecraft:damage_sensor": {
+				"triggers": [
+					{
+						"cause": "fall",
+						"deals_damage": false
+					}
+				]
+			},
+			"minecraft:can_climb": {},
+			"minecraft:collision_box": {
+				"height": 1.75,
+				"width": 1.6875
+			},
+			"minecraft:pushable": {
+				"is_pushable": false,
+				"is_pushable_by_piston": true
+			},
+			"minecraft:leashable": {
+				"soft_distance": 4,
+				"hard_distance": 9,
+				"max_distance": 17
+			},
+			"minecraft:nameable": {
+				"alwaysShow": true,
+				"allowNameTagRenaming": true,
+				"allow_name_tag_renaming": true,
+				"always_show": true
+			},
+			"minecraft:health": {
+				"value": 60,
+				"max": 60
+			},
+			"minecraft:despawn": {
+				"despawn_from_distance": {}
+			},
+			"minecraft:behavior.hurt_by_target": {
+				"priority": 3,
+				"alert_same_type": false,
+				"hurt_owner": false
+			},
+			"minecraft:behavior.float": {
+				"priority": 0,
+				"sink_with_passengers": false
+			},
+			"minecraft:physics": {
+				"has_collision": true,
+				"has_gravity": true,
+				"push_towards_closest_space": false
+			},
+			"minecraft:equip_item": {},
+			"minecraft:behavior.pickup_items": {
+				"can_pickup_any_item": false,
+				"can_pickup_to_hand_or_equipment": false,
+				"cooldown_after_being_attacked": 20,
+				"goal_radius": 2,
+				"max_dist": 3,
+				"pickup_based_on_chance": false,
+				"speed_multiplier": 0.5,
+				"track_target": false
+			},
+			"minecraft:behavior.eat_carried_item": {
+				"delay_before_eating": 1,
+				"priority": 12
+			},
+			"minecraft:behavior.equip_item": {
+				"priority": 2
+			},
+			"minecraft:shareables": {
+				"all_items": false,
+				"all_items_max_amount": 1,
+				"items": [
+					{ "item": "si:small_meat", "priority": 0, "max_amount": 1 },
+					{ "item": "si:small_fish_meet", "priority": 0, "max_amount": 1 },
+					{ "item": "si:medium_fish_meet", "priority": 0, "max_amount": 1 },
+					{ "item": "si:meet_medium", "priority": 0, "max_amount": 1 },
+					{ "item": "si:meet_big", "priority": 0, "max_amount": 1 },
+					{ "item": "minecraft:porkchop", "priority": 0, "max_amount": 1 },
+					{ "item": "minecraft:cooked_porkchop", "priority": 0, "max_amount": 1 },
+					{ "item": "minecraft:beef", "priority": 0, "max_amount": 1 },
+					{ "item": "minecraft:cooked_beef", "priority": 0, "max_amount": 1 },
+					{ "item": "minecraft:mutton", "priority": 0, "max_amount": 1 },
+					{ "item": "minecraft:cooked_mutton", "priority": 0, "max_amount": 1 },
+					{ "item": "minecraft:rabbit", "priority": 0, "max_amount": 1 },
+					{ "item": "minecraft:cooked_rabbit", "priority": 0, "max_amount": 1 },
+					{ "item": "minecraft:chicken", "priority": 0, "max_amount": 1 },
+					{ "item": "minecraft:cooked_chicken", "priority": 0, "max_amount": 1 },
+					{ "item": "minecraft:rotten_flesh", "priority": 0, "max_amount": 1 },
+					{ "item": "minecraft:egg", "priority": 0, "max_amount": 1 }
+				]
+			},
+			"minecraft:movement": {
+				"value": 0.2
+			},
+			"minecraft:scale": {
+				"value": 1
+			},
+			"minecraft:attack": {
+				"damage": 16
+			},
+			"minecraft:behavior.melee_attack": {
+				"priority": 4,
+				"track_target": true,
+				"reach_multiplier": 1.4,
+				"speed_multiplier": 1.9,
+				"attack_once": false,
+				"can_spread_on_fire": false,
+				"cooldown_time": 1,
+				"inner_boundary_time_increase": 0.25,
+				"max_path_time": 0.55,
+				"melee_fov": 90,
+				"min_path_time": 0.2,
+				"outer_boundary_time_increase": 0.5,
+				"path_fail_time_increase": 0.75,
+				"path_inner_boundary": 16,
+				"path_outer_boundary": 32,
+				"random_stop_interval": 0,
+				"require_complete_path": false,
+				"x_max_rotation": 30,
+				"y_max_head_rotation": 30
+			},
+			"minecraft:behavior.nearest_prioritized_attackable_target": {
+				"priority": 0,
+				"target_search_height": 4,
+				"entity_types": [
+					{
+						"filters": {
+							"all_of": [
+								{
+									"test": "is_family",
+									"subject": "other",
+									"value": "mob"
+								},
+								{
+									"none_of": [
+										{ "test": "is_family", "subject": "other", "value": "squid" },
+										{ "test": "is_family", "subject": "other", "value": "fish" },
+										{ "test": "is_family", "subject": "other", "value": "drowned" }
+									]
+								}
+							]
+						},
+						"must_see": false
+					}
+				],
+				"attack_interval": 0,
+				"cooldown": 0,
+				"must_reach": false,
+				"must_see": false,
+				"must_see_forget_duration": 3,
+				"persist_time": 3,
+				"reselect_targets": false,
+				"scan_interval": 10,
+				"set_persistent": false,
+				"within_radius": 10
+			},
+			"minecraft:behavior.stalk_and_pounce_on_target": {
+				"priority": 2,
+				"stalk_speed": 1.2,
+				"max_stalk_dist": 40,
+				"leap_height": 0.5,
+				"leap_dist": 1.5,
+				"pounce_max_dist": 10,
+				"interest_time": 1.5,
+				"stuck_time": 0,
+				"strike_dist": 10,
+				"stuck_blocks": {
+					"test": "is_block",
+					"subject": "block",
+					"operator": "==",
+					"value": "snow_layer"
+				},
+				"leap_distance": 0.8,
+				"set_persistent": false
+			},
+			"minecraft:behavior.nearest_attackable_target": {
+				"priority": 1,
+				"within_radius": 10,
+				"must_reach": true,
+				"entity_types": [
+					{
+						"filters": {
+							"any_of": [
+								
+								{ "test": "is_family", "subject": "other", "value": "bearcroo" },
+								{ "test": "is_family", "subject": "other", "value": "player" },
+								{ "test": "is_family", "subject": "other", "value": "spinaculex" },
+								{ "test": "is_family", "subject": "other", "value": "villager" },
+								{ "test": "is_family", "subject": "other", "value": "pillager" },
+								{ "test": "is_family", "subject": "other", "value": "cow" },
+								{ "test": "is_family", "subject": "other", "value": "sheep" },
+								{ "test": "is_family", "subject": "other", "value": "pig" },
+								{ "test": "is_family", "subject": "other", "value": "chicken" },
+								{ "test": "is_family", "subject": "other", "value": "llama" },
+								{ "test": "is_family", "subject": "other", "value": "horse" },
+								{ "test": "is_family", "subject": "other", "value": "donkey" },
+								{ "test": "is_family", "subject": "other", "value": "mule" },
+								{ "test": "is_family", "subject": "other", "value": "rabbit" },
+								{ "test": "is_family", "subject": "other", "value": "fox" },
+								{ "test": "is_family", "subject": "other", "value": "turtle" },
+								{ "test": "is_family", "subject": "other", "value": "cat" },
+								{ "test": "is_family", "subject": "other", "value": "ocelot" },
+								{ "test": "is_family", "subject": "other", "value": "wolf" },
+								{ "test": "is_family", "subject": "other", "value": "parrot" },
+								{ "test": "is_family", "subject": "other", "value": "panda" },
+								{ "test": "is_family", "subject": "other", "value": "goat" },
+								{ "test": "is_family", "subject": "other", "value": "frog" },
+								{ "test": "is_family", "subject": "other", "value": "camel" },
+								{ "test": "is_family", "subject": "other", "value": "sniffer" },
+								{ "test": "is_family", "subject": "other", "value": "armadillo" },
+								{ "test": "is_family", "subject": "other", "value": "mooshroom" },
+								{ "test": "is_family", "subject": "other", "value": "polarbear" },
+								{ "test": "is_family", "subject": "other", "value": "bee" }
+							]
+						},
+						"must_see": false,
+						"max_dist": 10
+					}
+				],
+				"must_see": true,
+				"attack_owner": false,
+				"must_see_forget_duration": 3,
+				"persist_time": 0,
+				"reselect_targets": false,
+				"scan_interval": 10,
+				"set_persistent": false,
+				"target_invisible_multiplier": 0.7,
+				"target_search_height": 4,
+				"target_sneak_visibility_multiplier": 0.8
+			},
+			"minecraft:behavior.look_at_player": {
+				"priority": 9,
+				"look_distance": 6,
+				"probability": 0.02
+			},
+			"minecraft:behavior.random_look_around": {
+				"priority": 10
+			},
+			"minecraft:on_target_acquired": {
+				"event": "giga:try_roar",
+				"target": "self"
+			},
+			"minecraft:on_target_escape": {
+				"event": "on:target_escape",
+				"target": "self"
+			},
+			"minecraft:annotation.open_door": {},
+			"minecraft:behavior.open_door": {
+				"close_door_after": true
+			},
+			"minecraft:variable_max_auto_step": {
+				"base_value": 1.5625,
+				"controlled_value": 1.5625,
+				"jump_prevented_value": 0.5625
+			}
+		},
+		"events": {
+			"minecraft:entity_spawned": {
+				"trigger": "si:seleccionar_variante"
+			},
+			"si:seleccionar_variante": {
+				"randomize": [
+					{
+						"weight": 50,
+						"add": {
+							"component_groups": [
+								"si:venatosaurus_macho"
+							]
+						}
+					},
+					{
+						"weight": 50,
+						"add": {
+							"component_groups": [
+								"si:venatosaurus_hembra"
+							]
+						}
+					}
+				]
+			},
+			"giga:try_roar": {
+				"filters": {
+					"test": "has_tag",
+					"subject": "self",
+					"operator": "!=",
+					"value": "roared"
+				},
+				"sequence": [
+					{
+						"add": {
+							"component_groups": [
+								"roared",
+								"roar_cooldown"
+							]
+						}
+					},
+					{
+						"queue_command": {
+							"command": [
+								"tag @s add roared",
+								"function venatosaurusI_roar"
+							]
+						}
+					}
+				]
+			},
+			"giga:reset_roar": {
+				"sequence": [
+					{
+						"remove": {
+							"component_groups": [
+								"roared",
+								"roar_cooldown"
+							]
+						}
+					},
+					{
+						"queue_command": {
+							"command": [
+								"tag @s remove roared"
+							]
+						}
+					}
+				]
+			}
+		}
+	}
+}

@@ -1,0 +1,17 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "si:bio_boots_craft"
+    },
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "X X",
+      "X X"
+    ],
+    "key": {
+      "X": { "item": "si:bio_plates" }
+    },
+    "result": { "item": "si:bio_boots", "count": 1 }
+  }
+}
